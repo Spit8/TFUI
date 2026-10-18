@@ -1,0 +1,217 @@
+/* Damier sous les couleurs transparentes. */
+.cp-swatch,
+.cp-pal,
+.cp-preview,
+.cp-alpha {
+  background-color: #fff;
+  background-image:
+    linear-gradient(45deg, #bbb 25%, transparent 25%),
+    linear-gradient(-45deg, #bbb 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #bbb 75%),
+    linear-gradient(-45deg, transparent 75%, #bbb 75%);
+  background-size: 8px 8px;
+  background-position: 0 0, 0 4px, 4px -4px, -4px 0;
+}
+
+.cp-swatch {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cp-swatch > span,
+.cp-pal > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cp-swatch:hover {
+  border-color: var(--accent);
+}
+
+.cp-popover {
+  position: fixed;
+  z-index: 10000;
+  width: 248px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  color: var(--text);
+  font-size: var(--fs-xs);
+}
+
+.cp-sv {
+  position: relative;
+  height: 140px;
+  border-radius: 3px;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.cp-sv-white,
+.cp-sv-black {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.cp-sv-white {
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.cp-sv-black {
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.cp-thumb {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.cp-slider {
+  position: relative;
+  height: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.cp-hue {
+  background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+}
+
+.cp-alpha > span:first-child {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+}
+
+.cp-thumb-bar {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 4px;
+  margin-left: -2px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.cp-fields {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cp-preview {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+.cp-hex {
+  width: 62px;
+  min-width: 0;
+}
+
+.cp-byte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  color: var(--muted);
+}
+
+.cp-byte input {
+  width: 30px;
+  text-align: center;
+}
+
+.cp-fields input {
+  padding: 1px 2px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text);
+  font-size: var(--fs-xs);
+}
+
+.cp-current {
+  color: var(--muted);
+}
+
+.cp-palette {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid var(--border);
+  padding-top: 6px;
+}
+
+.cp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cp-group-label {
+  color: var(--muted);
+}
+
+.cp-group-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.cp-pal {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cp-pal:hover,
+.cp-pal.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.cp-alpha-btn {
+  padding: 0 5px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  cursor: pointer;
+}
+
+.cp-alpha-btn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}

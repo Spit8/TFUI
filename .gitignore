@@ -1,0 +1,98 @@
+# ── Dépendances ──────────────────────────────
+node_modules/
+.pnpm-store/
+
+# ── Build front (Vite) ───────────────────────
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# ── Build Rust / Tauri ───────────────────────
+src-tauri/target/
+target/
+src-tauri/gen/schemas/
+# Bundles / installeurs
+*.msi
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+
+# ── Tests / couverture ───────────────────────
+coverage/
+*.lcov
+.nyc_output/
+vitest.config.*.timestamp-*
+vite.config.*.timestamp-*
+
+# ── Logs / debug ─────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.pdb
+*.dmp
+
+# ── Données sensibles ────────────────────────
+.env
+.env.*
+!.env.example
+# Clés de signature Tauri (updater) et certificats
+*.key
+*.key.pub
+*.pem
+*.pfx
+*.p12
+*.cer
+*.crt
+tauri.signing.*
+# Paramètres locaux de l'utilisateur (chemins machine)
+settings.local.json
+*.local.json
+
+# ── Données de travail locales ───────────────
+# Projets d'essai, sorties générées et sauvegardes de l'éditeur
+sandbox/
+tfui_sandbox/
+tools/debug-*.py
+*.bak
+*.tfui.autosave.json
+# Fichiers du jeu (propriété du studio, ne pas versionner) :
+# fixtures/ = liens créés par le linker vers l'install TF3 de l'utilisateur
+fixtures/
+game-cache/
+# Catalogue et vocabulaire CSS extraits de l'install locale (dérivés du jeu, régénérables)
+src/catalog/*.generated.json
+
+# ── Documents de travail (non publiés) ───────
+# Plans, notes de développement, consignes d’agents et spikes
+PLAN.md
+CORRECTIONS.md
+Sumend.md
+AGENTS.md
+CLAUDE.md
+docs/
+.claude/
+.cursor/
+# Scripts de débogage ponctuels (inspection des archives du jeu)
+tools/dev/*.py
+
+# ── Éditeurs / OS ────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini

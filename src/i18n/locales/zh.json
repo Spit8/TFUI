@@ -1,0 +1,1031 @@
+{
+  "_meta": {
+    "name": "中文"
+  },
+  "common": {
+    "save": "保存",
+    "close": "关闭",
+    "cancel": "取消",
+    "noProject": "没有打开的项目。",
+    "delete": "删除",
+    "typeNamed": "{type} \"{name}\""
+  },
+  "settings": {
+    "title": "设置",
+    "hint": "游戏路径和本地模组安装文件夹。目标模组需按项目选择。",
+    "tf3Root": "安装 Transport Fever 3 (TF3_ROOT)",
+    "stagingArea": "暂存文件夹（本地修改）",
+    "density": "显示 — 文本大小",
+    "densityCompact": "紧凑 (默认)",
+    "densityNormal": "普通",
+    "language": "界面语言",
+    "languageSystem": "系统语言",
+    "languageUser": "语言设置",
+    "localesFolder": "语言设置...",
+    "localesFolderHint": "打开翻译文件夹，并将 fr.modele.json 文件放入其中：复制该文件，重命名它（例如，en.json），然后翻译其中的值。 缺失的键将保持法语。",
+    "localesHelp": "模型文件 fr.modele.json 已保存在语言文件夹中：请将其复制并重命名为 <code>.json（例如，en.json），翻译其中的值，然后重新打开此对话框。",
+    "localesInvalid": "无法读取的语言文件：{files}",
+    "detecting": "正在检测中…",
+    "detectFailed": "检测失败。",
+    "verifyFailed": "验证失败。",
+    "saved": "已保存设置。",
+    "saveFailed": "保存失败。",
+    "detect": "检测",
+    "verify": "验证",
+    "importGame": "导入游戏内容…"
+  },
+  "cmd": {
+    "edit": {
+      "undo": "取消",
+      "redo": "重新设置\n恢复\n重新连接\n重新启动\n重新安装\n重新加载\n重新开始\n重新配置\n重新生成\n重新计算\n重新验证\n重新提交\n重新发送\n重新输入\n重新命名\n重新定位\n重新设计\n重新评估\n重新审核\n重新分配\n重新分配\n重新分配",
+      "redoAlt": "重新设置\n恢复\n重新连接\n重新启动\n重新安装\n重新加载\n重新开始\n重新配置\n重新生成\n重新计算\n重新验证\n重新提交\n重新发送\n重新输入\n重新命名\n重新定位\n重新设计\n重新评估\n重新审核\n重新分配\n重新分配\n重新分配",
+      "copy": "复制",
+      "paste": "粘贴",
+      "cut": "剪切"
+    },
+    "file": {
+      "new": "新建项目",
+      "newMod": "新模式...",
+      "open": "打开项目…",
+      "openMod": "打开模型...",
+      "save": "保存",
+      "saveAs": "另存为…",
+      "export": {
+        "viewport": "视口（.png）",
+        "ui": "UI（.png）",
+        "allViewports": "所有视图窗口（.png）",
+        "allUis": "所有UI元素（.png格式）",
+        "all": "全部 (视口 + 界面) (.png)"
+      },
+      "close": "关闭项目",
+      "quit": "退出",
+      "recentN": "最近 {n}"
+    },
+    "help": {
+      "shortcuts": "键盘快捷键",
+      "wiki": "TF3 维基百科",
+      "api": "文档API",
+      "about": "关于..."
+    },
+    "problems": {
+      "goToNode": "转到节点",
+      "copyMessage": "复制消息"
+    },
+    "code": {
+      "copy": "复制"
+    },
+    "mod": {
+      "properties": "模块属性...",
+      "writeGui": "写入GUI文件",
+      "build": "构建",
+      "install": "安装到游戏中",
+      "export": "导出 (.zip)...",
+      "checkTeal": "验证 Teal",
+      "openFolder": "打开模块文件夹",
+      "openStaging": "打开暂存文件夹",
+      "verifyRuntime": "验证运行 (不启动游戏)",
+      "launchGame": "开始游戏",
+      "readGameLog": "重新阅读游戏日志"
+    },
+    "tools": {
+      "settings": "设置…",
+      "rescan": "导入游戏内容…",
+      "linkGame": "链接游戏...",
+      "openModFolder": "打开模块文件夹",
+      "openStaging": "打开暂存文件夹"
+    },
+    "node": {
+      "duplicate": "复制",
+      "delete": "删除",
+      "moveUp": "上升\n向上\n提高\n增加\n上传\n启动\n开始\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动\n启动",
+      "moveDown": "下降",
+      "outdent": "退出父级目录",
+      "unwrap": "移除父级",
+      "rename": "重命名",
+      "selectParent": "选择父级...",
+      "toggleHidden": "隐藏/显示",
+      "toggleLocked": "锁定",
+      "revealInCode": "查看代码"
+    },
+    "dock": {
+      "tab": {
+        "close": "关闭",
+        "closeOthers": "关闭其他窗口",
+        "detach": "分离到窗口中...",
+        "reattach": "关联"
+      }
+    },
+    "rule": {
+      "new": "新的共享课程",
+      "duplicate": "复制课程",
+      "selectTargets": "选择下一个目标元素",
+      "delete": "删除规则",
+      "moveUp": "升高标尺",
+      "moveDown": "降低标尺"
+    },
+    "screen": {
+      "new:window": "窗口",
+      "new:recipe": "食谱",
+      "new:plugin": "插件 (按钮)",
+      "duplicate": "复制屏幕",
+      "delete": "删除屏幕",
+      "rename": "重命名食谱…"
+    },
+    "view": {
+      "resetLayout": "重置布局",
+      "density": {
+        "compact": "紧凑型",
+        "normal": "普通"
+      },
+      "focusProblems": "问题",
+      "togglePreviewCode": "切换预览/代码",
+      "previewSettings": "预览设置..."
+    },
+    "preview": {
+      "zoomIn": "放大",
+      "zoomOut": "后退缩放",
+      "fit": "调整至屏幕显示区域",
+      "100": "实际尺寸 100%"
+    }
+  },
+  "panel": {
+    "palette": "调色板",
+    "tree": "树形结构",
+    "preview": "预览",
+    "inspector": "检查器",
+    "code": "代码",
+    "problems": "问题",
+    "styles": "共享类",
+    "gameIcons": "游戏图标"
+  },
+  "menu": {
+    "file": "文件",
+    "edit": "编辑",
+    "insert": "插入",
+    "view": "显示",
+    "mod": "修改",
+    "tools": "工具",
+    "help": "帮助",
+    "none": "(无)",
+    "recent": "最近的",
+    "export": "导出",
+    "addChild": "添加子项",
+    "insertBefore": "插入到前面",
+    "insertAfter": "插入到此处",
+    "wrap": "包含于...",
+    "addParent": "添加父级",
+    "newScreen": "新屏幕",
+    "panels": "面板",
+    "textSize": "文本大小",
+    "cut": "剪切",
+    "copy": "复制",
+    "paste": "粘贴",
+    "selectAll": "全选"
+  },
+  "menubar": {
+    "untitled": "无标题",
+    "noProject": "无项目",
+    "dirtyHint": "未保存的修改 — 点击或按 Ctrl+S 键保存",
+    "savedHint": "已保存的项目",
+    "dirty": "已修改",
+    "saved": "已保存",
+    "errors": "{n, plural, one {# 错误} other {# 错误}}",
+    "build": "构建",
+    "install": "安装"
+  },
+  "boot": {
+    "starting": "启动...",
+    "readingCatalog": "读取游戏目录...",
+    "firstUse": "首次使用：导入游戏内容。",
+    "newGameVersion": "检测到游戏新版本。",
+    "imagesMissing": "未导入的游戏图片。",
+    "preparing": "正在准备游戏资源…",
+    "checkingInstall": "TF3安装验证...",
+    "importing": "导入游戏内容…",
+    "opening": "打开 {name}…",
+    "projectNotFound": "找不到项目：{path}"
+  },
+  "app": {
+    "projectSaved": "项目已保存。",
+    "saveFailed": "无法保存。",
+    "openFailed": "无法打开。",
+    "writeGuiFailed": "无法写入GUI。",
+    "buildFailed": "构建不可实现的内容。",
+    "installFailed": "安装失败。",
+    "exportFailed": "导出失败。",
+    "deployFailed": "部署失败。",
+    "modCreated": "已创建的模块：{path}",
+    "gitAdvice": "提示：建议对该文件夹进行版本控制（使用git init）。编辑器不会在未经您同意的情况下覆盖您的代码，但不会保留任何副本。",
+    "createFailed": "创建失败。",
+    "noModJson": "此文件夹不包含 mod.json 文件。",
+    "createProjectForMod": "未找到任何文件 {file}。\n是否为该模组创建一个编辑项目？",
+    "modOpened": "已打开模块：{path}",
+    "openModFailed": "无法打开修改后的文件。",
+    "tealDone": "Teal 验证完成 — 参见“问题”。",
+    "tealFailed": "无法进行“Teal”检查。",
+    "gameUpdatedBanner": "游戏已更新：旧版本的目录和资源 — 工具 > 导入游戏内容... 以进行更新。"
+  },
+  "import": {
+    "install": {
+      "title": "导入游戏内容",
+      "message": "首次使用时：编辑器会将组件目录、样式、字体和游戏中的图像复制到本地（仅需一次，之后可根据您的需求进行）。"
+    },
+    "update": {
+      "title": "游戏已更新",
+      "message": "Transport Fever 3 的安装方式已更新。现在更新目录和图片吗？"
+    },
+    "missing": {
+      "title": "游戏图片",
+      "message": "游戏图像尚未导入（预览和“游戏图标”面板）。现在导入？"
+    },
+    "manual": {
+      "title": "导入游戏内容",
+      "message": "更新本地副本：游戏目录、样式、字体和图像。"
+    },
+    "later": "稍后",
+    "inProgress": "正在导入...",
+    "readingDefinitions": "读取游戏定义…",
+    "catalogSaved": "已保存的目录和样式。",
+    "unreadableImages": "{n, 数量, 单数, {图像无法读取} 其他数, {图像无法读取} }",
+    "doneStatus": "导入的游戏内容：{components} 个组件，{images} 张图片{errors}。",
+    "doneToast": "导入的游戏内容 ({images} 张图片{errors}).",
+    "failed": "导入失败：{message}",
+    "noStyleSheets": "未能从游戏压缩包中读取任何样式表（.css.lua）：样式属性仅限于通用基础属性。"
+  },
+  "shortcuts": {
+    "title": "键盘快捷键",
+    "new": "Ctrl+N — 新建项目",
+    "open": "Ctrl+O — 打开",
+    "save": "Ctrl+S — 保存",
+    "build": "Ctrl+B — 构建",
+    "install": "F5 — 安装",
+    "undo": "Ctrl+Z / Y — 撤销 / 恢复",
+    "delete": "删除节点"
+  },
+  "about": {
+    "title": "关于...",
+    "text": "TFUI - Transport Fever 3 UI Editor — 用于 Transport Fever 3 的 Teal/React 界面编辑器。"
+  },
+  "ops": {
+    "slotRefusesLayout": "{parent}.{slot} 不接受布局（{type}）：游戏会导致整个界面崩溃。请像原版游戏一样，把它放进 Component（layout 字段）。",
+    "slotNeedsLayout": "{parent}.{slot} 必须是布局（BoxLayout、TableLayout…），而不是 {type}（“Item of Component must be a layout”）。",
+    "windowRootOnly": "窗口只能是屏幕的根节点。",
+    "boxUsesChild": "BoxLayout 已经使用了 \"child\" 这个名称，不应该同时使用两个名称。",
+    "boxUsesChildren": "BoxLayout 已经使用了 \"children\" 这个名称，而不是两个不同的名称。",
+    "nodeNotFound": "找不到节点。",
+    "crossScreenMove": "不支持在不同屏幕之间切换。",
+    "dropOnSelf": "无法将节点放置在其自身上。",
+    "rootNoSiblings": "主屏幕不能包含子屏幕。",
+    "screenNotFound": "找不到该屏幕。",
+    "dropInDescendant": "无法存入子节点。",
+    "parentNotFound": "找不到父级。",
+    "duplicateRoot": "无法复制根目录或找不到该节点。",
+    "moveUpRoot": "无法挂载根目录。",
+    "alreadyFirst": "该节点已处于首位。",
+    "moveDownRoot": "无法降级根目录。",
+    "alreadyLast": "该节点已位于最末位置。",
+    "outdentRoot": "无法取消根目录的缩进。",
+    "outdentUnderRoot": "无法在屏幕根目录下取消缩进。",
+    "grandParentNotFound": "无法找到祖父母。",
+    "unwrapRoot": "无法解压根目录。",
+    "unwrapWindow": "无法解压窗口。",
+    "nothingToUnwrap": "无需拆包装（无儿童）。",
+    "copyRoot": "无法复制屏幕根目录。",
+    "clipboardEmpty": "空白剪贴板。",
+    "targetNotFound": "目标不可用。",
+    "rootNoPasteSlot": "根目录没有用于粘贴的区域。",
+    "invalidPasteTarget": "无效的粘贴目标。",
+    "wrapRoot": "无法将屏幕根目录包含在内。",
+    "screenOrSlotNotFound": "找不到屏幕或插槽。",
+    "mustBeUnder": "{type} 必须位于 {parent} 下。",
+    "singleChildSlot": "“{slot}” 插槽只能接受一个子元素。",
+    "noSlotForChild": "{type} 没有可用的插槽来接收该对象。",
+    "noChildAccepted": "{type} 不接受儿童入住。",
+    "rootNoSiblingsDrop": "屏幕的根元素不能有子元素。",
+    "cannotDeleteLastScreen": "无法删除最后一个界面。",
+    "orphanChildren": "{type} 没有可用的目录槽位 — 从 \"{slot}\" 中移除了 {n, plural, one {# 一个孤儿} other {# 多个孤儿}}。",
+    "notBesideRoot": "无法放置在根目录旁边。"
+  },
+  "styleState": {
+    "normal": "正常",
+    "hover": "预览",
+    "active": "快速",
+    "disabled": "禁用"
+  },
+  "defaults": {
+    "scaffoldPreviewText": "{name} — 预览",
+    "windowTitle": "窗口",
+    "text": "文本",
+    "button": "按钮"
+  },
+  "validate": {
+    "imageview_size_prop": "ImageView 的 size 属性表示原始数据（data / data_native）的像素尺寸：它不会改变 path 图片的显示大小。请使用样式属性 size。",
+    "tabs_scrollable_orientation": "indicatorsScrollable 只适用于顶部或底部的标签（North、South）：游戏会在 East 和 West 时禁用它。",
+    "vanilla_unseen_child": "{parent}.{slot} 中的 {type}：原版游戏中从未出现（出现过：{seen}）。渲染和行为无法保证。",
+    "palette_unknown": "未知的调色板颜色“{name}”（{key}，{target}）：colorDefault.{name} 在游戏中为 nil，整个样式表都会失败。",
+    "absolute_layout_params": "AbsoluteLayout 不接受任何参数（builtin.d.tl：function({TreeNodeId})）：其属性、meta、类和样式都不会生成，只生成子元素。",
+    "duplicate_recipe_name": "食谱名称“{name}”已被其他界面使用。",
+    "window_root_required": "一个“窗口”类型的屏幕必须有一个窗口根对象。",
+    "window_close_inert": "可关闭的窗口，但未指定关闭事件或标识符：关闭按钮将不起作用。请为其设置一个标识符（常规 > 标识符）或一个关闭事件。",
+    "window_root_meta": "根窗口不能有 {keys} (常规)：游戏会将其包含在内并导致崩溃（“包装器配方必须返回子元素”）。 仅允许使用类；请将它们应用于内容。",
+    "plugin_root_must_be_layout": "插件“{name}”：根目录必须是一个布局（例如：BoxLayout），而不是“{type}”——否则会产生错误：“Recipe child must be a layout”。",
+    "window_not_root": "窗口只能是屏幕的根节点。",
+    "window_on_non_window_screen": "在非“窗口”类型的屏幕根目录下的窗口。",
+    "invalid_parent": "{type} 必须是 {parent} 的子项。",
+    "mono_slot_overflow": "单槽位 \"{slot}\"，类型为 {type}，包含 {n} 个子元素（最大 1 个）。",
+    "boxlayout_xor": "BoxLayout 不能同时使用 \"children\" 和 \"child\" 这两个属性。",
+    "duplicate_meta_id": "ID为“{id}”的元数据已在屏幕中重复出现。",
+    "vanilla_never_empty": "{type} 不包含 {missing}：基础游戏始终会提示 ({evidence})；如果为空，游戏可能会崩溃。",
+    "class_invalid_chars": "类 “{cls}”：只有字母、数字和“-”符号会被游戏中的 .css.lua 文件读取。",
+    "initial_xy_range": "{key} 的值必须在 [0, 1] 范围内（已接收到 {value}）。",
+    "css_rule_unscoped": "CSS 规则 \"{selector}\" 不使用类或伪类 — 它将影响所有此类元素，在整个游戏中。",
+    "style_key_not_allowed": "{target} 上的样式属性 {keys}：不适用于 {elements}（原版中未使用，也不属于通用基础属性）。"
+  },
+  "cascade": {
+    "idNotSimulated": "标识符 #… 未模拟",
+    "subPartNotSimulated": "子元素类型：未模拟部分",
+    "combinatorNotSimulated": "组合器 > * 或未模拟列表",
+    "pseudoNotSimulated": "模拟伪状态",
+    "emptySelector": "空选择器"
+  },
+  "styles": {
+    "emittedAsIs": "原样发送；{reason}",
+    "notSimulated": "未模拟",
+    "noTargetHint": "未找到匹配项：请将类添加到元素（检查器 > 元数据 > 类）",
+    "noTarget": "无可用项目",
+    "targetsHint": "{n, plural, one {# 触摸的元素} other {# 触摸的元素}}",
+    "targetsShort": "{n} 元素",
+    "intro": "Une classe partagée s’applique à <b>tous</b> les éléments qui portent la classe. Pour un seul élément, utilisez Inspecteur › Style.",
+    "newClass": "新类别",
+    "noClasses": "无共享类。",
+    "touchesSelection": "应用于所选元素",
+    "emptySelector": "（空选择器）",
+    "moveUp": "上传 (已发出)",
+    "moveDown": "降级 (稍后生效，会覆盖之前的设置)",
+    "selector": "选择器",
+    "fixHint": "⚠ Ce sélecteur ne touche aucun élément : un espace désigne un élément <em>à l’intérieur</em>. Vouliez-vous dire [fix] ?",
+    "fix": "修改",
+    "comment": "评论",
+    "properties": "属性",
+    "selectClass": "选择一个类别。",
+    "targetedElements": "已选中的元素 ({n})",
+    "noTargets": "无：将该类添加到元素（检查器 > 类）。",
+    "notPreviewed": "⚠ {reason}：规则已按原文编写，但预览中未显示。",
+    "state": "状态：[状态] (可在预览中通过“检查器”>“样式”查看)。",
+    "appliesToClass": "适用于具有该类别的元素",
+    "nodeHasClass": "所选节点的类属性为：",
+    "addClassToNodeHint": "将此类添加到选中的节点",
+    "addClassToNode": "+ 在选中的节点上"
+  },
+  "insp": {
+    "screen": "屏幕",
+    "recipe": "食谱",
+    "fileBase": "文件 (fileBase)",
+    "kind": "类型",
+    "kindWindow": "窗口",
+    "kindRecipe": "食谱",
+    "kindPlugin": "插件",
+    "noSelection": "未选择任何项目 — 请在预览或树形结构中点击一个元素。",
+    "noCatalog": "缺少目录 — 工具 › 导入游戏内容…",
+    "namePlaceholder": "名称",
+    "nameHint": "节点名称",
+    "filter": "筛选…",
+    "definedOnly": "仅限已定义项",
+    "issues": "⚠ {n, singular {# 问题} other {# 问题}} — 参见：问题",
+    "notesHint": "ⓘ 关于 {type} 的信息",
+    "props": "属性",
+    "definedCount": "{n, plural, one {# 已定义} other {# 已定义}}",
+    "noProps": "无可用选项。",
+    "general": "常规",
+    "windowRootNote": "根窗口：不要设置“活动”或“提示”，否则游戏会覆盖整个窗口并崩溃。请将这些设置调整为窗口内容。",
+    "remove": "移除 {keys}",
+    "enabledHint": "meta.enabled — 已禁用：该元素会变灰，不再响应操作，并显示“已禁用”状态",
+    "enabled": "活动",
+    "tooltipHint": "meta.tooltip — 鼠标悬停时显示的文本",
+    "tooltip": "信息提示",
+    "idHint": "meta.id — 元素的标识符（使用 #id 选择器，按 ID 搜索）",
+    "id": "标识符",
+    "style": "样式",
+    "classes": "课程",
+    "state": "状态",
+    "noScreen": "无屏幕。",
+    "initialValue": "初始值",
+    "addUseState": "添加 useState",
+    "notes": "备注\n提示\n说明\n注释",
+    "noNotes": "该组件没有评分。"
+  },
+  "loading": {
+    "messages": "对齐站点…\n提高盈利能力…\n建设火车站…\n优化换乘…\n与市长谈判…\n润滑道岔…\n招聘有轨电车司机…\n计算市中心拥堵情况…\n更换蒸汽机车…\n安装接触网…\n调整高峰时段时刻表…\n赔偿周边居民…\n挖掘穿过山丘的隧道…\n向钢铁厂运送煤炭…\n重新粉刷公交车…\n协商起降费用…\n接送迷路乘客…\n平衡亏损线路…\n更新老旧机车组…\n建造悬索桥…\n停靠货轮…\n绕过历史中心区域…"
+  },
+  "catalog": {
+    "category": {
+      "windows": "窗口",
+      "layouts": "布局",
+      "textImage": "文本与图像",
+      "controls": "控件",
+      "collections": "收藏集",
+      "helpers": "基础辅助功能",
+      "advanced": "高级",
+      "all": "所有内置功能"
+    },
+    "notes": {
+      "Window": "initialX / initialY 归一化为 0..1 (左上角)，不是像素值。\nid (WindowParam 属性) = 单例标识 / 通过 ID 获取 — 不是 Meta.id。\n从按钮打开：使用相同的 .script 文件，recipes.X，wapi.addSingletonWindow (不要使用 local api = …，也不要使用 util.useFn)。\n大小：expanded=true + CSS !window-expanded。\nPadding：设置在 Window 上会同时移动标题栏和关闭按钮；仅为内容留白时，请使用 Window!<类名> Window::Content 规则。",
+      "BoxLayout": "为空（没有子元素）时，其 gravity 在游戏中无效：空的 { -1, -1 } box 不会充当间隔，也不会推开相邻元素。\n需要间隔时，请使用组件面板中的“水平间隔 / 垂直间隔”（空 Component，游戏的做法）。",
+      "Component": "游戏中没有背景，也没有最小尺寸。为空并带有 horizontal-spacer 或 vertical-spacer 类时，就是游戏的间隔元素（见组件面板）。",
+      "FloatingLayout": "把其 FloatingLayoutChild 叠放在同一框内（徽标、图片上的图标、角落里的按钮）。游戏中非常常见的做法（118 个 FloatingLayout，296 个子元素）。",
+      "FloatingLayoutChild": "在 FloatingLayout 中放置其 item：h 和 v 类似 gravity（-1 填满，0 起始，0.5 居中，1 末端）。overflowMode = Overflow：item 可以超出框（忽略内边距和间距）。",
+      "AbsoluteLayout": "内置的绝对布局 (AbsoluteLayout) 是一个函数({TreeNodeId}) : TreeNodeId，而不是一个配方，需要手动注入到目录中。\n游戏的 Lua 文件均未使用它。生成为 builtin.AbsoluteLayout，子元素直接作为列表：没有属性和 meta（类、样式）。AbsoluteLayoutChild 只有 localKey 和 item：位置方式未知，需在游戏中验证。",
+      "ScrollArea": "始终保持游戏内容完整（52/52）。 如果为空，则可能导致游戏崩溃。\n游戏中无背景；缩小到可用空间，并按 horizontalPolicy / verticalPolicy 滚动（AlwaysOff = 裁剪且无滚动条，AlwaysOn，AsNeeded）。",
+      "TextView": "在垂直方向的BoxLayout中居中对齐，但不进行拉伸（已在实际使用中观察到，但未在基础文档中提及）。",
+      "ImageView": "显示尺寸：样式属性 size（size 属性表示 data / data_native 的像素，对 path 图片无效；coord = 配合 numFrames 的动画图集网格）。backgroundColor 不会被绘制（游戏中观察到）。",
+      "ComboBox": "始终拥有游戏本体中的所有物品（23/23）。",
+      "ComboBoxItem": "始终需要一个内容（例如，文本视图）和一个数值，并且必须在基础设置中完成（39/39）。",
+      "Slider": "水平（默认）：水平拉伸，高度为16（`builtin.css.lua`中的`Slider!horizontal`）；垂直：反之。\n滑块轨道在元素高度的中心位置（游戏内观察）。",
+      "TextInputField": "在布局中，它会向上和向两侧扩展（在游戏运行时观察到，但不在基础文件中体现）：它还会拉伸包含它的BoxLayout。\n背景覆盖了整个扩展的高度；输入的文本垂直居中（在游戏运行时观察到）。",
+      "ProgressBar": "在两个轴向上拉伸（重力 {-1, -1}，高度 20，定义在 builtin.css.lua 文件中）：它也会拉伸其父布局。",
+      "List": "selectionIndex / onSelect 的索引值从 1 开始 (Lua 索引)。\n游戏中无背景；会拉伸并跟随窗口：空间不足时列表被裁剪并可滚动（verticalScrollBarPolicy / horizontalScrollBarPolicy：AlwaysOff = 裁剪且无滚动条，AlwaysOn，AsNeeded）。drawBackground：外观未验证。",
+      "TextButton": "辅助按钮\nvanilla\nbutton_react_util.makeTextButton.",
+      "DataTable": "⚠ 不稳定：当使用非实体类型的 `rowKey` 时，可能导致 React 崩溃，且无法恢复。 建议使用 `TableLayout` 或 `BoxLayout`。"
+    }
+  },
+  "palette": {
+    "noCatalog": "无可用目录 — 工具 › 导入游戏内容…",
+    "search": "搜索组件...",
+    "gridView": "网格视图",
+    "listView": "列表视图",
+    "noResult": "无结果。",
+    "selectNode": "选择树中的一个节点或预览区域。",
+    "selectNodeShort": "选择树中的一个节点或预览内容",
+    "noProjectShort": "没有打开的项目",
+    "insertChild": "添加到 {target}",
+    "insertBefore": "插入到 {target} 之前",
+    "insertAfter": "插入到 {target} 之后",
+    "theSelection": "选择",
+    "presets": {
+      "HorizontalSpacer": {
+        "name": "水平间隔",
+        "tooltip": "带 horizontal-spacer 类的空 Component，与游戏的 gui_react_util.makeHorizontalSpacer() 相同：占据剩余宽度，推开相邻元素。"
+      },
+      "VerticalSpacer": {
+        "name": "垂直间隔",
+        "tooltip": "带 vertical-spacer 类的空 Component，与游戏的 gui_react_util.makeVerticalSpacer() 相同：占据剩余高度，推开相邻元素。"
+      }
+    }
+  },
+  "previewSettings": {
+    "title": "预览设置",
+    "gameText": "游戏文本",
+    "gameTextHint": "如游戏设置中的“界面”>“文本缩放”选项，其字体大小由 `scaling.css.lua` 文件控制",
+    "scaleSmall": "小",
+    "scaleMedium": "平均值",
+    "scaleLarge": "大号",
+    "asGame": "如同游戏({scale})",
+    "asGameUnknown": "如游戏（难度：中等）",
+    "textSize": "文本大小 (游戏设置 > 界面 > 文本缩放)",
+    "backgrounds": "背景图片，按屏幕尺寸选择",
+    "backgroundsHint": "游戏截图格式：根据模拟屏幕的高度进行调整，居中显示，并保持比例。如果未选择图像，则使用上次选择的格式作为默认选项。 在预览栏中可以选择“图像”、“统一”或“遮罩”模式。",
+    "shown": "（显示中）",
+    "choose": "选择…",
+    "forget": "忘记此图像",
+    "colors": "颜色",
+    "hoverFill": "快速填充",
+    "hoverFillHint": "鼠标悬停元素填充",
+    "hoverOutline": "轮廓绘制",
+    "hoverOutlineHint": "鼠标悬停时，显示元素轮廓",
+    "boxOutline": "“盒子”轮廓",
+    "boxOutlineHint": "每个元素的细边框（预览框中的复选框）",
+    "selectedOutline": "已选元素",
+    "selectedOutlineHint": "选中元素的轮廓",
+    "selectedWidthHint": "所选元素的轮廓线粗细 (1 到 8 像素)",
+    "selectedWidth": "选择轮廓的粗细（像素）",
+    "defaultColors": "默认颜色"
+  },
+  "deploy": {
+    "noStagingArea": "未设置 staging 文件夹：请在“设置”中填写（游戏本地模组的“staging_area”文件夹）。",
+    "manualFiles": "没有编辑器标题的文件：\n{files}",
+    "handModified": "自上次修改以来，以下生成的文件已手动修改：\n{files}",
+    "overwriteConfirm": "{parts}\n\n是否继续覆盖？您的修改将会丢失（只有在项目使用了版本控制系统，例如 Git 的情况下，才能恢复）。\n\n确定 = 覆盖 · 取消 = 保留这些文件不变",
+    "missingHandlersConfirm": "在编辑器中选择但未出现在您文件中的处理程序：\n\n{list}\n\n是否在 \"return handlers\" 之前添加空函数？（这些文件的其他部分不会被修改。）",
+    "noReturnHandlers": "{file}：找不到“return handlers”，无法添加 — 请从“问题”中复制代码片段。",
+    "fixErrorsBeforeBuild": "在构建之前，请修复验证器报告的错误。",
+    "fixErrorsBeforeExport": "导出前，请修正验证器中的错误。",
+    "runtimeFails": "生成的代码执行时出错 ({n, plural, one {# 错误} other {# 错误}}) — 详情请参阅“问题”。",
+    "runtimeSkipped": "忽略执行验证：{reason}",
+    "tf3Running": "Transport Fever 3 已发布：已安装的模组将在重新加载模组中心或重新启动游戏后生效。\n\n是否继续安装？",
+    "andMore": "...以及 {n, 复数, 单数 {# 另一个} 其他; 复数 {# 其他}}",
+    "modifiedInStaging": "这些暂存目录下的文件自上次安装以来已被手动修改：\n\n{list}{more}\n\n暂存目录是一个输出目录：请在项目目录（已版本控制）中进行编码。是否仍然安装（这些文件将被覆盖）？",
+    "stagingExists": "暂存文件夹已存在，且没有安装记录。\n{path}\n\n是否替换？",
+    "guiWritten": "已写入GUI文件。",
+    "exportZip": "导出 ZIP：{path}",
+    "buildOk": "构建成功 — {n, plural, one {# 文件} other {# 文件}} → {path}",
+    "installed": "已安装 → {path}",
+    "fileIdPreserved": "(保留 mod.io 文件 ID)",
+    "neverBuilt": "未建造",
+    "neverInstalled": "从未安装过",
+    "noProject": "无项目",
+    "fixErrors": "修正验证器中的错误",
+    "lastBuild": "最新版本：{date}",
+    "staleBuild": "已修改的项目或源代码 — 需要重新构建",
+    "buildReady": "构建已准备就绪，但尚未由发布者安装",
+    "installCurrent": "最新安装版本",
+    "installStale": "比安装程序更新的构建版本"
+  },
+  "preview": {
+    "noProject": "无项目 — 创建一个项目以查看预览。",
+    "disclaimer": "预览（HTML/CSS）——最终结果取决于实际游戏中的测试。",
+    "viewport": "视口",
+    "resolutionsHint": "游戏全屏分辨率 (选项菜单)",
+    "resolutionsReduced": "精简列表：重新扫描游戏以获取其分辨率",
+    "backgroundFallback": "对于 {ratio} 比例的屏幕，如果没有图像，将显示最后选择的图像。 按格式显示：显示 > 预览设置...",
+    "backgroundHint": "模拟壁纸（已保存）。\n按屏幕格式显示：显示 > 预览设置...",
+    "background": "背景",
+    "bgSolid": "统一",
+    "bgHidden": "隐藏",
+    "bgImage": "图像",
+    "zoomOut": "后退缩放",
+    "zoomIn": "放大",
+    "zoomPercent": "缩放 %",
+    "fitHint": "调整至屏幕显示区域",
+    "fit": "调整",
+    "actualSizeHint": "实际尺寸 100%",
+    "actualSize": "100%",
+    "boxesHint": "显示所有元素的轮廓（可保存设置）",
+    "boxes": "盒子",
+    "stateSim": "状态模拟："
+  },
+  "tree": {
+    "hidden": "隐藏",
+    "locked": "已锁定",
+    "expand": "展开",
+    "collapse": "回复",
+    "slotBadge": "父组件的槽位 \"{slot}\"",
+    "noProject": "无项目 — 文件 → 新建项目 或 打开。",
+    "delete": "删除",
+    "collapseAll": "折叠全部 (当前项目)",
+    "expandAll": "展开所有 (当前项目)",
+    "unsavedProject": "未保存的项目",
+    "expandProject": "展开项目",
+    "collapseProject": "回复项目",
+    "dirty": "已修改，未保存",
+    "untitled": "无标题"
+  },
+  "color": {
+    "groupNeutral": "中性",
+    "groupBase": "基金",
+    "groupAccent": "强调",
+    "groupOther": "游戏",
+    "choose": "选择颜色",
+    "swatchPalette": "{title} — 游戏配色方案：{name}",
+    "picker": "颜色选择器",
+    "alpha": "透明度 (alpha)",
+    "r": "R",
+    "g": "V",
+    "b": "B",
+    "a": "A",
+    "opacityPercent": "不透明度（百分比）",
+    "currentPalette": "游戏调色板：<b>{name}</b>{alpha} — 任何修改都会将其替换为固定值。",
+    "currentAlpha": "(alpha {alpha})",
+    "paletteEntry": "{name} (游戏调色板)",
+    "transparencies": "透明度",
+    "noPalette": "游戏资源面板不可用：工具 > 导入游戏内容...",
+    "hex": "十六进制 #rrggbb"
+  },
+  "nodeClasses": {
+    "empty": "无类。一个类将共享的样式规则应用于该元素（多个元素可以应用相同的样式）。",
+    "editRule": "在“共享课程”中修改规则",
+    "rules": "{n, plural, one {规则} other {# 规则}} ›",
+    "noRule": "当前项目没有规则使用此类（可能来自游戏）",
+    "createRule": "创建规则",
+    "removeClass": "移除类 {cls}",
+    "placeholder": "+ 类别 (例如：中学)",
+    "add": "添加",
+    "alsoApply": "也适用于（按类型）："
+  },
+  "nodeStyle": {
+    "gameDefault": "默认游戏：{file} — {selector}\n修改此值会增加该元素的负担。",
+    "game": "游戏",
+    "ownHint": "应用于此项",
+    "inheritedHint": "继承该元素的默认状态",
+    "own": "此项",
+    "inherited": "正常",
+    "inlineHint": "旧式内联样式 (样式表)",
+    "inline": "内联",
+    "sharedClass": "共享课程：{selector} — 点击以展开",
+    "defaultStyle": "默认样式",
+    "stateStyle": "当元素处于 {state} 状态时 (:{key})，应用以下样式",
+    "defined": "已定义",
+    "empty": "无样式：添加属性。",
+    "emptyState": "没有适用于 {state} 状态的样式：请添加一个属性。",
+    "hiddenGame": "+ {n, plural, one {# 未呈现的游戏缺陷} other {# 未呈现的游戏缺陷}} (通过预览，包括图像、声音和过渡效果)",
+    "writtenIn": "Écrit dans le <code>.css.lua</code> de l’écran : [selectors]",
+    "nothingDefined": "对于此状态，该项尚未定义。"
+  },
+  "styleKey": {
+    "axes": {
+      "wh": "l,h",
+      "xy": "x,y",
+      "trbl": "h,d,b,g",
+      "rgba": "r, v, b, a"
+    },
+    "size": {
+      "hint": "-1 = 自动"
+    },
+    "padding": {
+      "hint": "上、右、下、左"
+    },
+    "gravity": {
+      "label": "伸展",
+      "hint": "-1 = 沿轴方向拉伸； 0 / 0.5 / 1 = 位于起始位置 / 居中 / 位于末尾"
+    },
+    "margin": {
+      "hint": "外边距：上、右、下、左"
+    },
+    "minSize": {
+      "hint": "最小尺寸"
+    },
+    "maxSize": {
+      "hint": "最大尺寸（-1 = 无限制）"
+    },
+    "color": {
+      "label": "文本",
+      "hint": "文本颜色 (R, G, B, A，范围 0..1)"
+    },
+    "backgroundColor": {
+      "label": "背景",
+      "hint": "背景颜色 (R, G, B, A，范围 0..1)"
+    },
+    "backgroundColor1": {
+      "label": "背景 1",
+      "hint": "面板的主要背景颜色 (红、绿、蓝、透明度，范围为 0..1)"
+    },
+    "backgroundColor2": {
+      "label": "背景 2",
+      "hint": "第二种背景颜色 (红、绿、蓝、透明度，范围为 0..1)；预览时可能不显示"
+    },
+    "shadowColor": {
+      "label": "阴影",
+      "hint": "阴影颜色 (R, G, B, A，范围 0..1)；预览中不显示"
+    },
+    "borderColor": {
+      "label": "轮廓",
+      "hint": "轮廓颜色 (R, V, B, A，范围 0..1)；预览显示 1 像素"
+    },
+    "textAlignment": {
+      "label": "文本对齐",
+      "hint": "文本在框内的位置：0 = 左/上，0.5 = 居中，1 = 右/下（x, y）。需拉伸框（gravity -1 或 size）才能看出效果。"
+    },
+    "anchorPoint": {
+      "label": "锚点",
+      "hint": "元素放置在其位置上的点（x, y，取值 0..1）；预览不显示"
+    },
+    "borderWidth": {
+      "label": "边框宽度",
+      "hint": "上、右、下、左（像素）；预览不显示"
+    },
+    "fontSize": {
+      "label": "文字大小",
+      "hint": "字号，单位像素（替代 font-scale-… 类）"
+    },
+    "textAutoWrap": {
+      "label": "自动换行",
+      "hint": "文本超出宽度时自动换行；预览不显示"
+    },
+    "visibility": {
+      "label": "可见性",
+      "hint": "visible；hidden / transparent：不可见；folded / none：从布局中移除（原版取值）"
+    },
+    "fontWeight": {
+      "label": "字重",
+      "hint": "Lato 字体的字重（Mono… = 等宽）"
+    },
+    "innerSpacing": {
+      "hint": "布局中子元素之间的间距（x, y）"
+    },
+    "outerSpacing": {
+      "hint": "布局围绕其子元素的内边距（x, y）"
+    }
+  },
+  "propEditor": {
+    "notEditable": "不可编辑（{type}）",
+    "scalarHint": "数字或文本：输入的数字按数字写出，其余内容加引号。",
+    "numberListHint": "以逗号分隔的数字，例如 10, -1, 80（columnWeights：-1 = 列的自然宽度）。",
+    "noState": "—状态—",
+    "unset": "恢复默认设置",
+    "modeTitle": "模式：{mode}",
+    "modeAria": "模式 {mode}",
+    "modeLiteral": "字面值",
+    "modeEnum": "枚举",
+    "modeState": "状态",
+    "modeHandler": "处理器\n处理程序\n处理\n处理程序...",
+    "modeLua": "Lua",
+    "mustBeNumber": "{field} 必须是一个数字。",
+    "outOfRange": "{field} 的值必须在 [0, 1] 范围内（已接收到 {value}）。",
+    "imageNotFound": "找不到图片",
+    "pickIcon": "从游戏图标中选择（将图标拖动到元素上）",
+    "icons": "图标...",
+    "functionName": "函数名称",
+    "luaExpression": "Lua 表达式"
+  },
+  "styleRows": {
+    "paletteName": "Couleur nommée de la palette du jeu, écrite colorDefault.<Nom> dans le .css.lua",
+    "textHint": "数量，真/假，文本或列表 \"1, 2\"",
+    "addProperty": "属性 (大小、内边距、颜色...)",
+    "notPreviewed": "在 .css.lua 文件中定义，但预览功能未模拟",
+    "remove": "移除此值",
+    "empty": "无属性。",
+    "helperNoStyle": "辅助组件：它不对应任何游戏元素，无法设置元素样式。请为其包含的元素设置样式。",
+    "keyRefused": "“{key}”不是 {elements} 的属性（原版中未在此类型上使用，也不属于通用基础属性）。",
+    "evidenceCommon": "通用基础属性 — 原版中未在此类型上使用",
+    "rescanForKeys": "列表仅含通用基础属性：请重新扫描游戏以获取各类型的属性。",
+    "notAllowed": "“{key}”不是 {elements} 的属性：在游戏中预计无效。请移除（✕）。"
+  },
+  "link": {
+    "detectFailed": "检测失败。",
+    "browseCancelled": "已取消文件夹选择。",
+    "linkFailed": "连接失败。",
+    "title": "链接运输狂热3 (Transport Fever 3)",
+    "intro": "编辑器会读取游戏安装目录下的 Teal 类型定义文件和样式表。游戏中的任何文件都不会被复制到项目中。",
+    "root": "安装文件夹 (TF3_ROOT)",
+    "browse": "浏览...",
+    "link": "链接游戏"
+  },
+  "importDialog": {
+    "minimum": "导入最小值",
+    "minimumHint": "最快：显示所需字体和图像（窗口、按钮等）。“游戏图标”面板几乎为空。",
+    "ui": "所有界面图像 (.tga 文件)",
+    "uiHint": "更完整：包含游戏界面的所有图标和图像（gui.zip），可在“游戏图标”面板中查看。",
+    "all": "游戏所有图像文件 (.tga)",
+    "allHint": "最全面：除了界面，还包含游戏内其他内容的图像（任务、气候、机制等）。",
+    "images": "{n, plural, one {# 图片} other {# 图片}}",
+    "counting": "计算...",
+    "moreTime": "- 每个级别都会增加处理时间",
+    "footer": "图像仅转换一次（本地复制）；更新始终在您请求时进行（工具 > 导入游戏内容...）。",
+    "import": "导入"
+  },
+  "diff": {
+    "new": "{n, plural, one {# 新的} other {# 新的}}",
+    "changed": "{n, plural, one {# 修改} other {# 修改}}",
+    "same": "{n, plural, one {# 未改变} other {# 未改变}}",
+    "removed": "{n, plural, one {# 删除} other {# 删除}}",
+    "stateNew": "新建",
+    "stateChanged": "已修改",
+    "stateSame": "未更改",
+    "stateRemoved": "已删除",
+    "title": "GUI 写入前差异预览",
+    "intro": "本会话的首次写入 — 检查更改 ({summary}).",
+    "noFile": "无文件",
+    "userFileTab": "您的文件，仅创建一次",
+    "userFileNote": "用于您的代码的文件：现在创建，编辑器将不再修改它。",
+    "write": "写入文件"
+  },
+  "icons": {
+    "maskHint": "根据样式颜色调整的遮罩",
+    "colorHint": "彩色图像",
+    "itemHint": "{path}\n{w}×{h} 像素 — {kind}\n将图像拖动到预览区域或树形结构中： ImageView",
+    "importMore": "导入游戏图像...",
+    "search": "搜索图标...",
+    "loading": "正在加载图标...",
+    "none": "未导入游戏图片。",
+    "minimumOnly": "导入最小：仅提供预览图像。",
+    "groupNonUi": "游戏内容",
+    "groupOther": "其他..."
+  },
+  "newMod": {
+    "title": "新模组",
+    "intro": "创建目录结构 §7.2 以及一个项目，包含窗口和“Mod Hub”按钮。",
+    "parentDir": "父文件夹",
+    "displayName": "显示名称",
+    "chooseParent": "选择一个父文件夹。",
+    "invalidModId": "无效的modId：[a-z0-9_]+",
+    "nameRequired": "指定显示名称。",
+    "create": "创建"
+  },
+  "modDialog": {
+    "loading": "正在加载元数据…",
+    "title": "模块 - 元数据",
+    "name": "名称",
+    "summary": "摘要",
+    "description": "描述",
+    "tags": "标签（逗号）",
+    "url": "URL",
+    "author": "作者",
+    "thumbnail": "缩略图",
+    "imageFilter": "图像",
+    "thumbnailSaved": "已保存的缩略图 (_metadata/0.png)。",
+    "chooseImage": "选择图片…",
+    "saved": "已保存元数据。"
+  },
+  "dock": {
+    "layoutReset": "已重置布局（无法读取备份）。",
+    "popoutFailed": "无法打开分离窗口。"
+  },
+  "progress": {
+    "catalog": "游戏目录和风格",
+    "fonts": "游戏规则",
+    "images": "游戏图片",
+    "title": "导入游戏内容",
+    "phase": "{pct} % — {phase}",
+    "remaining": "剩余时间：{time}",
+    "estimating": "正在估算...",
+    "lessThan5s": "5秒以内",
+    "aboutSeconds": "约 {s} 秒",
+    "aboutMinutes": "约 {m} 分钟",
+    "aboutMinutesSeconds": "约 {m} 分 {s} 秒",
+    "inventory": "游戏图像列表…",
+    "imagesImported": "{n, plural, one {# 导入的图片} other {# 导入的图片}}"
+  },
+  "unsaved": {
+    "title": "未保存的修改内容",
+    "message": "项目 <b>{name}</b> 存在未保存的修改。您是否要保存这些修改 {action}？",
+    "discard": "不保存",
+    "beforeQuit": "离开前...",
+    "beforeContinue": "继续前..."
+  },
+  "dnd": {
+    "moving": "移动…",
+    "forbidden": "无法保存"
+  },
+  "cmdReason": {
+    "noSelection": "未选择。",
+    "rootCannotBeCut": "无法删除根目录。",
+    "noInsertSlot": "无可用插槽。",
+    "rootCannotBeDeleted": "无法删除屏幕根目录。",
+    "noElementWithClass": "没有元素具有该类。",
+    "recipeNamePrompt": "菜谱名称"
+  },
+  "runtime": {
+    "checkFailed": "验证失败：{reason}",
+    "errors": "{n, plural, one {# 运行时错误} other {# 运行时错误}} — 参见“问题”。",
+    "ok": "图形用户界面代码无错误地运行。",
+    "gameErrors": "{n, plural, one {# 游戏错误} other {# 游戏错误}} — 参见“问题”。",
+    "noGameErrors": "无与模组相关的游戏错误。",
+    "harness": "执行台：{message}",
+    "runtimeUnreadable": "游戏运行时间无法读取：{message}",
+    "gameCrashed": "游戏在上次会话中崩溃（请查看以下错误）。",
+    "alreadyRunning": "Transport Fever 3 已经发布。",
+    "launching": "Transport Fever 3 游戏上线…",
+    "logClean": "游戏日志 ({when})：未发现与模组相关的错误。",
+    "logIssues": "游戏日志 ({when})：{n, plural, one {# 相关问题} other {# 相关问题}}，与模组有关。",
+    "inRecipe": "{message} (在 {where})"
+  },
+  "propMenu": {
+    "unset": "恢复默认设置",
+    "copy": "复制数值"
+  },
+  "export": {
+    "renderNotFound": "已丢失/无法找到",
+    "renderEmpty": "已清空",
+    "done": "导出 PNG：{path}",
+    "failed": "导出失败：{message}",
+    "pickFolder": "PNG 导出设置",
+    "doneMany": "导出PNG：{n, plural, one {# 文件} other {# 文件}} 到 {dir}",
+    "interrupted": "导出中断 ({n, plural, one {# 已写入} other {# 已写入}})：{message}"
+  },
+  "file": {
+    "projectFilter": "TFUI 项目",
+    "defaultProjectName": "projet.tfui.json"
+  },
+  "catalogErrors": {
+    "notLoaded": "TF3目录未加载 — 无法解析插槽。",
+    "sheetNotFound": "找不到游戏页面：{sheet}",
+    "sheetFailed": "{sheet} 表格加载失败：{error}",
+    "paletteFailed": "调色板出错：{error}",
+    "tgaPalette": "不支持带调色板的TGA文件",
+    "tgaType": "不支持类型为 {type} 的 TGA 文件",
+    "tgaBpp": "不支持 TGA 格式的 {bpp} 位"
+  },
+  "codePanel": {
+    "noProject": "无项目 — 没有内容可生成。",
+    "generating": "生成..."
+  },
+  "problems": {
+    "unversioned": "未版本化项目：编辑器不会保存任何被您确认覆盖的文件。为了能够回溯，请对项目文件夹进行版本控制（使用git init）。",
+    "none": "没问题。",
+    "sourceGame": "游戏",
+    "sourceExecution": "执行",
+    "project": "项目",
+    "orphanHandlers": "{file} 不再被任何界面使用（界面已删除或重命名）。编辑器不会自动删除它：请重命名或自行删除。",
+    "missingHandlers": "{n, plural, one {缺少处理程序} other {缺少处理程序}} 在 {file} 中：{names} — 右键单击 › 复制 将复制桩代码以供粘贴；在编写 GUI 文件时，还会提供自动添加功能。"
+  },
+  "previewNode": {
+    "placeholderText": "（文本）",
+    "placeholderButton": "按钮",
+    "placeholderCard": "卡片",
+    "closeButton": "关闭按钮 (由引擎绘制，可关闭)",
+    "imageNotFound": "找不到图片：{path}",
+    "imageNoPath": "无路径的图像视图",
+    "emptyScroll": "{type}（空）— 将元素拖放到此处"
+  },
+  "store": {
+    "noChildSlot": "{type} 没有子槽。",
+    "invalidJson": "无效的JSON格式"
+  },
+  "settingsErrors": {
+    "tauriRequired": "配置参数需要使用 Tauri 应用程序 (pnpm tauri dev)。"
+  },
+  "backend": {
+    "io": {
+      "read": "无法读取 ({path})：{error}",
+      "write": "无法写入 ({path})：{error}",
+      "mkdirParents": "无法创建父文件夹 ({path})：{error}",
+      "mkdir": "无法创建文件夹 ({path})：{error}",
+      "remove": "无法删除 ({path})：{error}",
+      "readDir": "无法读取文件 ({path})：{error}",
+      "create": "无法创建 ({path})：{error}",
+      "copy": "无法复制 {from} → {to}：{error}",
+      "imageFormat": "不支持的图像格式 ({path})",
+      "missingPathHeader": "缺失路径 (XPath 头部)",
+      "binaryBodyExpected": "预期二进制数据",
+      "notJsonObject": "预期接收到的JSON对象：{path}",
+      "jsonSerialize": "JSON序列化失败：{error}"
+    },
+    "zip": {
+      "open": "无法打开 ZIP 文件 ({path})：{error}",
+      "invalid": "无效的压缩包 ({path})：{error}",
+      "entry": "无法读取第 {index} 个压缩文件：{error}",
+      "entryName": "压缩包条目编号 {index} 的名称无法读取：{error}",
+      "entryNotFound": "找不到条目 \"{entry}\"：{error}",
+      "readEntry": "无法读取条目“{entry}”：{error}"
+    },
+    "game": {
+      "rootNotFound": "找不到 TF3_ROOT 文件夹：{path}",
+      "folderMissing": "缺少文件：{path}",
+      "rootValid": "TF3 安装验证成功 (找到 builtin.d.tl)：{path}",
+      "builtinMissing": "文件缺失：{path} — 请选择《运输狂热3》的安装目录。",
+      "notDetected": "未自动检测到 TF3 安装。{detail}",
+      "emptyRelative": "相对路径为空。",
+      "forbiddenRelative": "禁止使用相对路径：{path}",
+      "outsideRoot": "TF3_ROOT目录之外的路径。",
+      "readContent": "无法读取内容文件 ({path})：{error}",
+      "appDataCreate": "无法创建应用程序的数据文件夹：{error}",
+      "catalogWrite": "无法写入目录：{error}",
+      "styleVocabWrite": "无法写入样式词汇表：{error}",
+      "exeNotFound": "找不到可执行文件：{path}",
+      "stagingInvalid": "无效的暂存目录。",
+      "launchFailed": "无法启动游戏：{error}",
+      "elevationRequired": "此游戏需要较高的权限。",
+      "logNotFound": "游戏日志文件未找到：{path}"
+    },
+    "cache": {
+      "invalidPath": "缓存路径无效：{path}",
+      "missing": "未在缓存中：{path}",
+      "missingHeader": "缺少标题：{name}",
+      "mkdir": "缓存文件无法创建：{error}",
+      "write": "无法写入缓存：{error}",
+      "remove": "无法清除缓存：{error}",
+      "readBaseContent": "基本内容/无法读取：{error}",
+      "zipInvalid": "无效的 ZIP 文件 {path}：{error}",
+      "index": "图像索引失败：{error}"
+    },
+    "deploy": {
+      "modRootNotFound": "无法找到 modRoot 目录：{path}",
+      "cleanBuild": "无法清理构建：{error}",
+      "buildNotFound": "无法找到的构建：{path}",
+      "refuseTf3Root": "安装目标不能位于 TF3_ROOT 目录 ({path}) 下。",
+      "modFolderNotFound": "找不到模块文件：{path}"
+    },
+    "teal": {
+      "noConfig": "未找到 tlconfig.lua 文件，跳过 Teal 验证。",
+      "noTl": "`tl` 未在 PATH 环境变量中找到 — Teal 验证已跳过。",
+      "noFiles": "没有需要检查的GUI文件。",
+      "ok": "TLS 检查成功。",
+      "failed": "TL 检查失败（无输出）。"
+    },
+    "mod": {
+      "folderExists": "该文件夹已存在：{path}",
+      "createGui": "无法创建内容/引导：{error}",
+      "createMetadata": "无法创建元数据：{error}",
+      "thumbnailSave": "无法保存缩略图：{error}",
+      "thumbnailCopy": "无法复制缩略图：{error}"
+    },
+    "locales": {
+      "invalidCode": "无效的语言代码：{code}"
+    },
+    "harness": {
+      "enumUnknown": "枚举 {name} 的未知值：{value}",
+      "wrongType": "{field} 参加 \"{kind}\"，已收到 {got}",
+      "vectorExpected": "{field} 需要 {type}：请写 api.type.{type}.new(…)，而不是表（收到 {got}）",
+      "engineLayoutRule": "游戏拒绝：“{message}”（{where}）——整个界面崩溃",
+      "unknownField": "字段“{field}”在{param}中不存在",
+      "moduleSimulated": "模拟模块 {module} (未加载 Teal)",
+      "moduleNotFound": "找不到模块：{module}",
+      "builtinTypeNil": "内置类型 {name} 不存在（值为空）",
+      "wrapperMustReturnChild": "包装配方必须返回子元素：\"{recipe}\" 应该返回一个 {expected}，但它返回了一个 {got}，导致程序崩溃（断言 activeNodeIds）",
+      "tooDeep": "{path} 路径中的渲染深度过大",
+      "unknownRecipe": "未知食谱：{recipe}",
+      "luaErrorIn": "Lua 脚本错误，位置：{where}，错误信息：{error}",
+      "luaErrorInHandler": "Lua 脚本错误，发生在 {handler} ({recipe}, {path})：{error}",
+      "syntax": "Lua 语法：{error}",
+      "loadError": "加载时出错：{error}",
+      "noDataFunction": "{chunk} 中没有 data() 函数",
+      "dataError": "数据中出现错误：{error}",
+      "dataMustReturnTable": "data() 必须返回一个数据表",
+      "exportNotRecipe": "导出 \"{name}\" 不是一个菜谱",
+      "singletonNotRecipe": "addSingletonWindow 接收的参数不仅仅是配置信息",
+      "syntaxIn": "Lua 语法 ({chunk})：{error}",
+      "loadErrorIn": "加载 {chunk} 时发生错误：{error}",
+      "errorIn": "{chunk} 中出现错误：{error}",
+      "dataMustReturnTableIn": "{chunk}: data() 必须返回一个表格"
+    }
+  }
+}

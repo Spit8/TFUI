@@ -1,0 +1,147 @@
+.palette-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  font-size: var(--fs-base);
+}
+
+.palette-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: var(--pad-y) var(--pad-x);
+  border-bottom: 1px solid var(--border);
+}
+
+.palette-search {
+  flex: 1;
+  min-width: 0;
+}
+
+.palette-search input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #1a2027;
+  color: var(--text);
+  padding: var(--pad-y) var(--pad-x);
+  font: inherit;
+  font-size: var(--fs-sm);
+}
+
+.palette-view-toggle {
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: #2d3540;
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: var(--pad-y) var(--pad-x);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--fs-xs);
+}
+
+.palette-view-toggle:hover {
+  border-color: var(--accent);
+}
+
+.palette-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: var(--pad-y) 0;
+}
+
+.palette-category.collapsible-section {
+  margin-bottom: 0.15rem;
+}
+
+.palette-category .collapsible-body {
+  padding: 0;
+}
+
+.palette-items-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.palette-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 2px;
+  padding: 0 var(--pad-x) var(--pad-y);
+}
+
+.palette-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: var(--row-h);
+  padding: var(--pad-y) var(--pad-x);
+  cursor: grab;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+.palette-items-grid .palette-item {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 52px;
+  padding: var(--pad-y) 2px;
+  gap: 2px;
+}
+
+.palette-item:hover {
+  background: #2a313a;
+}
+
+.palette-item.dragging {
+  opacity: 0.45;
+}
+
+.palette-item-icon {
+  flex-shrink: 0;
+  color: var(--muted);
+}
+
+.palette-item-name {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.palette-items-grid .palette-item-name {
+  font-size: var(--fs-xs);
+  white-space: normal;
+  line-height: 1.2;
+  flex: none;
+}
+
+.palette-badge {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: var(--fs-xs);
+  color: #ffc978;
+}
+
+.palette-items-grid .palette-badge {
+  margin-left: 0;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.palette-items-grid .palette-item {
+  position: relative;
+}
+
+.palette-empty {
+  padding: 1rem;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}

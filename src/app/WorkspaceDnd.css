@@ -1,0 +1,38 @@
+body.dnd-active,
+body.dnd-active * {
+  cursor: grabbing !important;
+}
+
+body.dnd-forbidden,
+body.dnd-forbidden * {
+  cursor: not-allowed !important;
+}
+
+.dnd-overlay {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.25rem 0.5rem;
+  background: #2a3f5c;
+  border: 1px solid #3d8bfd88;
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.dnd-overlay.forbidden {
+  background: #3a2326;
+  border-color: #e5484d;
+}
+
+.dnd-ban {
+  color: #e5484d;
+  flex: 0 0 auto;
+}
+
+.dnd-reason {
+  color: #ffb3b5;
+  font-size: var(--fs-xs);
+}

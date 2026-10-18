@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "mod": { "modId": "tfui_preview", "modRoot": "mod", "guiDir": "gui" },
+  "screens": [
+    {
+      "id": "screen-1",
+      "fileBase": "preview_gui",
+      "recipeName": "PreviewDemoWindow",
+      "kind": "window",
+      "state": [{ "name": "tab", "initial": "a" }],
+      "root": {
+        "id": "win",
+        "type": "Window",
+        "props": {
+          "title": { "kind": "literal", "value": "Démo 2 colonnes" },
+          "initialX": { "kind": "literal", "value": 0.15 },
+          "initialY": { "kind": "literal", "value": 0.1 }
+        },
+        "meta": { "id": "tfui_preview.demo" },
+        "slots": {
+          "content": [
+            {
+              "id": "root-box",
+              "type": "BoxLayout",
+              "props": {
+                "orientation": { "kind": "enum", "value": "Orientation.Horizontal" }
+              },
+              "meta": { "class": ["root-row"] },
+              "slots": {
+                "children": [
+                  {
+                    "id": "col-left",
+                    "type": "BoxLayout",
+                    "props": {
+                      "orientation": { "kind": "enum", "value": "Orientation.Vertical" }
+                    },
+                    "meta": { "class": ["col"] },
+                    "slots": {
+                      "children": [
+                        {
+                          "id": "tabs",
+                          "type": "TabWidget",
+                          "props": {},
+                          "meta": {},
+                          "slots": {
+                            "tabs": [
+                              {
+                                "id": "tab-a",
+                                "type": "TabWidgetChild",
+                                "props": {
+                                  "title": { "kind": "literal", "value": "Onglet A" }
+                                },
+                                "meta": {},
+                                "slots": {
+                                  "content": [
+                                    {
+                                      "id": "tv-a",
+                                      "type": "TextView",
+                                      "props": {
+                                        "text": { "kind": "literal", "value": "Contenu A" }
+                                      },
+                                      "meta": {},
+                                      "slots": {}
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "id": "tab-b",
+                                "type": "TabWidgetChild",
+                                "props": {
+                                  "title": { "kind": "literal", "value": "Onglet B" }
+                                },
+                                "meta": {},
+                                "slots": {
+                                  "content": [
+                                    {
+                                      "id": "tv-b",
+                                      "type": "TextView",
+                                      "props": {
+                                        "text": { "kind": "literal", "value": "Contenu B" }
+                                      },
+                                      "meta": {},
+                                      "slots": {}
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "btn-apply",
+                          "type": "Button",
+                          "props": {},
+                          "meta": {},
+                          "slots": {
+                            "content": [
+                              {
+                                "id": "btn-label",
+                                "type": "TextView",
+                                "props": {
+                                  "text": { "kind": "literal", "value": "Appliquer" }
+                                },
+                                "meta": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "col-right",
+                    "type": "BoxLayout",
+                    "props": {
+                      "orientation": { "kind": "enum", "value": "Orientation.Vertical" }
+                    },
+                    "meta": { "class": ["col"] },
+                    "slots": {
+                      "children": [
+                        {
+                          "id": "list",
+                          "type": "List",
+                          "props": {},
+                          "meta": {},
+                          "slots": {
+                            "items": [
+                              {
+                                "id": "li-1",
+                                "type": "TextView",
+                                "props": {
+                                  "text": { "kind": "literal", "value": "Ligne 1" }
+                                },
+                                "meta": {},
+                                "slots": {}
+                              },
+                              {
+                                "id": "li-2",
+                                "type": "TextView",
+                                "props": {
+                                  "text": { "kind": "literal", "value": "Ligne 2" }
+                                },
+                                "meta": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "btn-ok",
+                          "type": "Button",
+                          "props": {},
+                          "meta": {},
+                          "slots": {
+                            "content": [
+                              {
+                                "id": "ok-label",
+                                "type": "TextView",
+                                "props": {
+                                  "text": { "kind": "literal", "value": "OK" }
+                                },
+                                "meta": {},
+                                "slots": {}
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "header": []
+        }
+      },
+      "previewViewport": { "w": 1920, "h": 1080 }
+    }
+  ],
+  "styleRules": [
+    {
+      "id": "rule-root",
+      "selector": "BoxLayout!root-row",
+      "props": { "innerSpacing": [16, 12] }
+    },
+    {
+      "id": "rule-col",
+      "selector": "BoxLayout!col",
+      "props": { "innerSpacing": [8, 8], "size": [320, -1] }
+    }
+  ],
+  "catalogHash": "preview-fixture"
+}

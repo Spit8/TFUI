@@ -1,0 +1,15 @@
+{
+  "authors": [
+    {
+      "name": "Author",
+      "role": "CREATOR"
+    }
+  ],
+  "description": "Mod d’exemple créé avec TFUI : interface seule, données fictives.",
+  "name": "TFUI — Exemple",
+  "summary": "Exemple d’interface TFUI",
+  "tags": [
+    "Script Mod"
+  ],
+  "url": ""
+}

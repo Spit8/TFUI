@@ -1,0 +1,168 @@
+.menubar-root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0 0.5rem;
+  min-height: 32px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  user-select: none;
+}
+
+.menubar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.menubar-menus {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.menubar-trigger {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 0.35rem 0.55rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-size: var(--fs-sm);
+}
+
+.menubar-trigger:hover,
+.menubar-trigger.open {
+  background: #323b47;
+}
+
+.menubar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.menubar-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  max-width: 280px;
+}
+
+.status-file {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* État d’enregistrement du projet (distinct de l’état Build / Installer). */
+.save-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+  cursor: default;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.save-state.is-dirty {
+  border-color: #b86a1f;
+  background: #3d2a14;
+  color: #ffb866;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-state.is-dirty:hover {
+  background: #4f3519;
+}
+
+.save-state.is-saved {
+  color: var(--muted);
+}
+
+.save-state.is-saved.flash {
+  border-color: #2f7a46;
+  background: #173323;
+  color: #7ee2a0;
+}
+
+.save-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff9d2e;
+}
+
+.status-errors {
+  border: 1px solid #a15c2a;
+  background: #3a2a1a;
+  color: #f0b27a;
+  border-radius: var(--radius);
+  padding: 0.15rem 0.4rem;
+  cursor: pointer;
+  font-size: var(--fs-xs);
+}
+
+.deploy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--border);
+  background: #2d3540;
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 0.25rem 0.55rem;
+  cursor: pointer;
+  font-size: var(--fs-sm);
+}
+
+.deploy-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.deploy-btn.deploy-current {
+  border-color: #2f8f4e;
+  background: #1e3a28;
+  color: #8fd9a8;
+}
+
+.deploy-btn.deploy-stale {
+  border-color: #c47a22;
+  background: #3a2e18;
+  color: #f0c27a;
+}
+
+.deploy-btn.deploy-error {
+  border-color: #c44;
+  background: #3a1e1e;
+  color: #f0a0a0;
+}
+
+.deploy-btn.deploy-running {
+  border-color: var(--accent);
+  opacity: 0.85;
+}
+
+.deploy-btn.deploy-blocked {
+  opacity: 0.45;
+}
+
+.deploy-btn.primary.deploy-never,
+.deploy-btn.primary.deploy-stale {
+  border-color: #c47a22;
+}

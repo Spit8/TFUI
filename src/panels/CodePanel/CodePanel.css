@@ -1,0 +1,41 @@
+.code-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.code-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: var(--pad-y) var(--pad-x);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.code-tabs button {
+  border: 1px solid var(--border);
+  background: #2d3540;
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: var(--pad-y) var(--pad-x);
+  cursor: pointer;
+  font-size: var(--fs-sm);
+}
+
+.code-tabs button.active {
+  border-color: var(--accent);
+  background: #2a3f5c;
+}
+
+.code-editor {
+  flex: 1;
+  min-height: 0;
+}
+
+.code-empty {
+  padding: 1rem;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}

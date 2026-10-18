@@ -1,0 +1,54 @@
+.preview-settings {
+  min-width: 460px;
+}
+
+.preview-settings h3 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: var(--fs-sm);
+}
+
+.ps-formats,
+.ps-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ps-format {
+  display: grid;
+  grid-template-columns: 7rem 1fr auto auto;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 4px;
+  border-radius: var(--radius);
+}
+
+.ps-format.current {
+  background: #243548;
+}
+
+.ps-format-label {
+  white-space: nowrap;
+}
+
+.ps-current {
+  color: var(--muted);
+  font-size: var(--fs-xs);
+}
+
+.ps-format-file {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.ps-color {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ps-color input {
+  width: 3.5rem;
+}

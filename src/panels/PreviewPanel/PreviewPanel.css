@@ -1,0 +1,177 @@
+.preview-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--bg);
+}
+
+.preview-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: var(--pad-y) var(--pad-x);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  font-size: var(--fs-sm);
+}
+
+.preview-toolbar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--muted);
+}
+
+.preview-toolbar select {
+  font: inherit;
+}
+
+.preview-zoom-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.preview-zoom-input {
+  width: 3.2rem;
+  font: inherit;
+  text-align: right;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #1a1f26;
+  color: var(--text);
+  padding: 0.15rem 0.3rem;
+}
+
+.preview-zoom-suffix {
+  color: var(--muted);
+  margin-right: 0.15rem;
+}
+
+.preview-toolbar button {
+  border: 1px solid var(--border);
+  background: #2d3540;
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: var(--pad-y) var(--pad-x);
+  cursor: pointer;
+  font: inherit;
+}
+
+.preview-toolbar button.active {
+  border-color: var(--accent);
+  background: #2a3f5c;
+}
+
+.preview-selection {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  color: var(--text);
+  font-size: var(--fs-xs);
+}
+
+.preview-selection-icon {
+  color: var(--muted);
+}
+
+.preview-disclaimer {
+  padding: var(--pad-y) var(--pad-x);
+  font-size: var(--fs-xs);
+  color: #ffe6a8;
+  background: #3a3420;
+  border-bottom: 1px solid #6a5a28;
+}
+
+.preview-state-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: var(--pad-y) var(--pad-x);
+  border-bottom: 1px solid var(--border);
+  font-size: var(--fs-sm);
+}
+
+.preview-map {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+  background:
+    linear-gradient(rgba(30, 38, 48, 0.9) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, rgba(30, 38, 48, 0.9) 1px, transparent 1px) 0 0 /
+      24px 24px,
+    #12161c;
+  cursor: default;
+  touch-action: none;
+}
+
+.preview-map.panning,
+.preview-map.panning * {
+  cursor: grabbing;
+}
+
+.preview-viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-shrink: 0;
+  background: #1a1f26;
+  border: 1px solid #3a4450;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  transform-origin: 0 0;
+  overflow: hidden;
+  will-change: transform;
+}
+
+/* Fond masqué : seul le cadre de l’écran reste visible. */
+.preview-viewport.hidden-bg {
+  border: 1px dashed #3a4450;
+  box-shadow: none;
+}
+
+/* Image de fond : hauteur de l’écran, centrée, proportions conservées. */
+.preview-viewport-image-frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.preview-viewport-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.preview-toolbar button.error {
+  border-color: #e5484d;
+}
+
+.preview-warning {
+  color: #ffe6a8;
+  font-size: var(--fs-xs);
+}
+
+.preview-empty {
+  padding: 1.5rem;
+  color: var(--muted);
+}
+
+/* Case à cocher de la barre d’outils (option « Box »). */
+.preview-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}

@@ -1,0 +1,86 @@
+.icons-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.icons-scroll {
+  flex: 1;
+  overflow: auto;
+  padding-bottom: 8px;
+}
+
+.icons-subgroup {
+  padding: 2px 6px 4px;
+}
+
+.icons-subtitle {
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  margin: 2px 0;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 4px;
+}
+
+.icons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.icons-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  cursor: grab;
+  user-select: none;
+}
+
+.icons-item:hover {
+  border-color: var(--accent);
+  background: #2a313a;
+}
+
+.icons-item.dragging {
+  opacity: 0.4;
+}
+
+/* Fond sombre : les masques du jeu (blancs + opacité) se lisent comme en jeu. */
+.icons-thumb {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #11151a;
+  border-radius: 3px;
+}
+
+.icons-thumb img {
+  max-width: 34px;
+  max-height: 34px;
+  image-rendering: auto;
+}
+
+.icons-name {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--fs-sm);
+}
+
+.icons-size {
+  color: var(--muted);
+  font-size: var(--fs-xs);
+}

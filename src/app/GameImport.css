@@ -1,0 +1,83 @@
+.game-import {
+  max-width: 560px;
+}
+
+.game-import-modes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0.5rem 0;
+}
+
+.game-import-mode {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.game-import-mode.selected {
+  border-color: var(--accent);
+  background: #243548;
+}
+
+.game-import-mode-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.game-import-count {
+  color: #f5c46b;
+  font-size: var(--fs-sm);
+}
+
+.game-import-hint {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
+
+.game-import-progress {
+  width: 480px;
+  max-width: 90vw;
+}
+
+.game-import-fun {
+  min-height: 1.4em;
+  font-style: italic;
+  color: #9cc4ff;
+}
+
+.game-import-bar {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.game-import-bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #2f6fd1, #3d8bfd);
+  transition: width 0.2s ease-out;
+}
+
+.game-import-figures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: var(--fs-sm);
+}
+
+.game-import-detail {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

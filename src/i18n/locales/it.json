@@ -1,0 +1,1031 @@
+{
+  "_meta": {
+    "name": "Italiano"
+  },
+  "common": {
+    "save": "Salvare",
+    "close": "Chiudere",
+    "cancel": "Annullare",
+    "noProject": "Nessun progetto aperto.",
+    "delete": "Elimina",
+    "typeNamed": "{type} \" {name} \""
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "hint": "Percorsi di installazione del gioco e della cartella dei mod locali. Il mod da utilizzare viene selezionato per ogni progetto.",
+    "tf3Root": "Installazione di Transport Fever 3 (cartella TF3_ROOT)",
+    "stagingArea": "Pacchetto di configurazione (modifiche locali)",
+    "density": "Visualizzazione – Dimensione del testo",
+    "densityCompact": "Compatta (difetto)",
+    "densityNormal": "Normale",
+    "language": "Lingua dell'interfaccia",
+    "languageSystem": "Lingua del sistema",
+    "languageUser": "cartella lingue",
+    "localesFolder": "Documento sulle lingue...",
+    "localesFolderHint": "Aprire la cartella delle traduzioni e inserire il file fr.modele.json: copiarlo, rinominarlo (ad esempio, en.json), e tradurre i valori. Le chiavi mancanti rimarranno in francese.",
+    "localesHelp": "Il file fr.modele.json è stato inserito nella cartella delle lingue: copiatelo con il nome <code>.json (ad esempio, en.json), traducete i valori e poi riaprite questo dialogo.",
+    "localesInvalid": "File di lingua illeggibili: {files}",
+    "detecting": "Rilevamento in corso...",
+    "detectFailed": "Impossibile rilevare.",
+    "verifyFailed": "Errore durante la verifica.",
+    "saved": "Impostazioni salvate.",
+    "saveFailed": "Errore durante il salvataggio.",
+    "detect": "Rilevare",
+    "verify": "Verificare",
+    "importGame": "Importare i contenuti del gioco..."
+  },
+  "cmd": {
+    "edit": {
+      "undo": "Annullare",
+      "redo": "Ripristina",
+      "redoAlt": "Ripristina",
+      "copy": "Copiare",
+      "paste": "Incollare",
+      "cut": "Tagliare"
+    },
+    "file": {
+      "new": "Nuovo progetto",
+      "newMod": "Nuovo modello...",
+      "open": "Aprire progetto...",
+      "openMod": "Aprire un modulo...",
+      "save": "Salvare",
+      "saveAs": "Salva con…",
+      "export": {
+        "viewport": "Vista (.png)",
+        "ui": "Interfaccia utente (.png)",
+        "allViewports": "Tutte le anteprime (.png)",
+        "allUis": "Tutte le immagini dell'interfaccia utente (.png)",
+        "all": "Tutto (Vista + Interfaccia utente) (.png)"
+      },
+      "close": "Chiudere il progetto",
+      "quit": "Esci",
+      "recentN": "Recente {n}"
+    },
+    "help": {
+      "shortcuts": "Scorciatoie da tastiera",
+      "wiki": "Wiki TF3",
+      "api": "API per la gestione dei documenti",
+      "about": "Informazioni"
+    },
+    "problems": {
+      "goToNode": "Andare al nodo",
+      "copyMessage": "Copiare il messaggio"
+    },
+    "code": {
+      "copy": "Copiare"
+    },
+    "mod": {
+      "properties": "Proprietà del modulo…",
+      "writeGui": "Scrittura dei file dell'interfaccia grafica",
+      "build": "Costruire",
+      "install": "Installare nel gioco",
+      "export": "Esportare (.zip)...",
+      "checkTeal": "Verifica Teal",
+      "openFolder": "Aprire la cartella del modulo",
+      "openStaging": "Aprire la cartella relativa alle esperienze pratiche",
+      "verifyRuntime": "Verifica l'esecuzione (senza avviare il gioco)",
+      "launchGame": "Avviare il gioco",
+      "readGameLog": "Rileggere il diario di gioco"
+    },
+    "tools": {
+      "settings": "Impostazioni...",
+      "rescan": "Importare i contenuti del gioco...",
+      "linkGame": "Collegare il gioco...",
+      "openModFolder": "Aprire la cartella del modulo",
+      "openStaging": "Aprire la cartella relativa alle esperienze pratiche"
+    },
+    "node": {
+      "duplicate": "Duplichare",
+      "delete": "Elimina",
+      "moveUp": "Salire",
+      "moveDown": "Scendere",
+      "outdent": "Esci dal contesto",
+      "unwrap": "Rimuovi il genitore",
+      "rename": "Rinomina",
+      "selectParent": "Seleziona il genitore",
+      "toggleHidden": "Nascondi / Mostra",
+      "toggleLocked": "Blocca",
+      "revealInCode": "Visualizza nel codice"
+    },
+    "dock": {
+      "tab": {
+        "close": "Chiudere",
+        "closeOthers": "Chiudere le altre",
+        "detach": "Scollegare in una finestra",
+        "reattach": "Collegare"
+      }
+    },
+    "rule": {
+      "new": "Nuova classe condivisa",
+      "duplicate": "Duplicare la classe",
+      "selectTargets": "Selezionare l'elemento successivo",
+      "delete": "Elimina la regola",
+      "moveUp": "Sollevare la riga",
+      "moveDown": "Scorrere la riga"
+    },
+    "screen": {
+      "new:window": "Finestra",
+      "new:recipe": "Ricetta",
+      "new:plugin": "Plugin (pulsante)",
+      "duplicate": "Duplicare lo schermo",
+      "delete": "Elimina schermata",
+      "rename": "Rinomina la ricetta..."
+    },
+    "view": {
+      "resetLayout": "Ripristina layout",
+      "density": {
+        "compact": "Compatto",
+        "normal": "Normale"
+      },
+      "focusProblems": "Problemi",
+      "togglePreviewCode": "Alterna tra anteprima e codice",
+      "previewSettings": "Impostazioni dell'anteprima..."
+    },
+    "preview": {
+      "zoomIn": "Avanti",
+      "zoomOut": "Zoom indietro",
+      "fit": "Regolare sullo schermo",
+      "100": "Dimensione reale 100%"
+    }
+  },
+  "panel": {
+    "palette": "Palette",
+    "tree": "Albero",
+    "preview": "Panoramica",
+    "inspector": "Ispettore",
+    "code": "Codice",
+    "problems": "Problemi",
+    "styles": "Classi condivise",
+    "gameIcons": "Icone del gioco"
+  },
+  "menu": {
+    "file": "File",
+    "edit": "Modifica",
+    "insert": "Inserimento",
+    "view": "Visualizzazione",
+    "mod": "Mod",
+    "tools": "Strumenti",
+    "help": "Aiuto",
+    "none": "(nessuno)",
+    "recent": "Recenti",
+    "export": "Esportare",
+    "addChild": "Aggiungi bambino/a",
+    "insertBefore": "Inserire prima",
+    "insertAfter": "Inserire dopo",
+    "wrap": "Avvolgere in...",
+    "addParent": "Aggiungere un parente",
+    "newScreen": "Nuovo schermo",
+    "panels": "Pannelli",
+    "textSize": "Dimensione del testo",
+    "cut": "Tagliare",
+    "copy": "Copiare",
+    "paste": "Incollare",
+    "selectAll": "Seleziona tutto"
+  },
+  "menubar": {
+    "untitled": "senza titolo",
+    "noProject": "nessun progetto",
+    "dirtyHint": "Modifiche non salvate. Cliccare o premere Ctrl+S per salvare",
+    "savedHint": "Progetto salvato",
+    "dirty": "Modificato",
+    "saved": "Registrato",
+    "errors": "{n, plural, one {# errore} other {# errori}}",
+    "build": "Costruire",
+    "install": "Installare"
+  },
+  "boot": {
+    "starting": "Avvio...",
+    "readingCatalog": "Lettura del catalogo del gioco...",
+    "firstUse": "Prima esecuzione: importazione dei contenuti del gioco.",
+    "newGameVersion": "È stata rilevata una nuova versione del gioco.",
+    "imagesMissing": "Immagini del gioco non importate.",
+    "preparing": "Preparazione delle risorse di gioco…",
+    "checkingInstall": "Verifica dell'installazione TF3...",
+    "importing": "Importazione dei contenuti del gioco...",
+    "opening": "Apertura di {name}…",
+    "projectNotFound": "Progetto non trovato: {path}"
+  },
+  "app": {
+    "projectSaved": "Progetto salvato.",
+    "saveFailed": "Impossibile salvare.",
+    "openFailed": "Impossibile aprire.",
+    "writeGuiFailed": "Impossibile scrivere nell'interfaccia grafica.",
+    "buildFailed": "Costruire l'impossibile.",
+    "installFailed": "Installazione impossibile.",
+    "exportFailed": "Esportazione non possibile.",
+    "deployFailed": "Distribuzione non possibile.",
+    "modCreated": "Modello creato: {path}",
+    "gitAdvice": "Consiglio: versionate questa cartella (utilizzate git init). L'editor non sovrascrive mai il vostro codice senza il vostro consenso, ma non conserva alcuna copia.",
+    "createFailed": "Creazione impossibile.",
+    "noModJson": "Questa cartella non contiene il file \"mod.json\".",
+    "createProjectForMod": "Nessun file {file} trovato.\nCreare un progetto di pubblicazione per questa mod?",
+    "modOpened": "Modello aperto: {path}",
+    "openModFailed": "Apertura modificata impossibile.",
+    "tealDone": "Verifica Teal completata: vedere \"Problemi\".",
+    "tealFailed": "Controllo \"teal\" non possibile.",
+    "gameUpdatedBanner": "Il gioco è stato aggiornato: catalogo e risorse della versione precedente. Strumenti > Importare i contenuti del gioco... per aggiornarli."
+  },
+  "import": {
+    "install": {
+      "title": "Importazione dei contenuti di gioco",
+      "message": "Prima esecuzione: l'editor copia localmente il catalogo dei componenti, gli stili, i font e le immagini del gioco (una sola volta, e poi su vostra richiesta)."
+    },
+    "update": {
+      "title": "Il gioco è stato aggiornato",
+      "message": "L'installazione di Transport Fever 3 è stata modificata rispetto alla versione precedente. È necessario aggiornare ora il catalogo e le immagini?"
+    },
+    "missing": {
+      "title": "Immagini del gioco",
+      "message": "Lele immagini del gioco non sono ancora state importate (anteprima e pannello \"Icone del gioco\"). Vuole importarvele ora?"
+    },
+    "manual": {
+      "title": "Importare i contenuti del gioco",
+      "message": "Aggiorna la copia locale: catalogo, stili, font e immagini del gioco."
+    },
+    "later": "Più tardi",
+    "inProgress": "Importazione in corso...",
+    "readingDefinitions": "Lettura delle definizioni del gioco...",
+    "catalogSaved": "Catalogo e stili salvati.",
+    "unreadableImages": "{n, plural, one {, # immagine illeggibile} other {, # immagini illeggibili}}",
+    "doneStatus": "Contenuto del gioco importato: {components} componenti, {images} immagini{errors}.",
+    "doneToast": "Contenuto del gioco importato ({images} immagini{errors}).",
+    "failed": "Impossibile importare: {message}",
+    "noStyleSheets": "Nessun foglio di stile (.css.lua) letto dagli archivi del gioco: le proprietà di stile sono limitate alla base comune."
+  },
+  "shortcuts": {
+    "title": "Scorciatoie da tastiera",
+    "new": "Ctrl+N – Nuovo progetto",
+    "open": "Ctrl+O – Apri",
+    "save": "Ctrl+S – Salva",
+    "build": "Ctrl+B – Compila",
+    "install": "F5 – Installazione",
+    "undo": "Ctrl+Z / Y – Annulla / Ripristina",
+    "delete": "Elimina nodo..."
+  },
+  "about": {
+    "title": "Informazioni",
+    "text": "TFUI - Transport Fever 3 UI Editor: editor di interfacce Teal/React per Transport Fever 3."
+  },
+  "ops": {
+    "slotRefusesLayout": "{parent}.{slot} non accetta un layout ({type}): il gioco fa cadere l'intera interfaccia. Avvolgerlo in un Component (campo layout), come il gioco base.",
+    "slotNeedsLayout": "{parent}.{slot} deve essere un layout (BoxLayout, TableLayout…), non {type} («Item of Component must be a layout»).",
+    "windowRootOnly": "Una finestra può essere solo la radice di uno schermo.",
+    "boxUsesChild": "BoxLayout utilizza già il termine \"child\" – non entrambi gli slot.",
+    "boxUsesChildren": "BoxLayout utilizza già l'attributo \"children\", non entrambi gli slot.",
+    "nodeNotFound": "Nodo non trovato.",
+    "crossScreenMove": "Lo spostamento tra schermi non è supportato.",
+    "dropOnSelf": "È impossibile creare un nodo su se stesso.",
+    "rootNoSiblings": "La radice dello schermo non può avere elementi fratelli.",
+    "screenNotFound": "Schermo non trovato.",
+    "dropInDescendant": "Impossibile depositare in un discendente.",
+    "parentNotFound": "Genitore non rintracciabile.",
+    "duplicateRoot": "Impossibile duplicare la radice o un nodo non trovato.",
+    "moveUpRoot": "Impossibile caricare la radice.",
+    "alreadyFirst": "Il nodo è già nella posizione più alta.",
+    "moveDownRoot": "Impossibile accedere alla radice.",
+    "alreadyLast": "Il nodo è già nella posizione più bassa.",
+    "outdentRoot": "È impossibile rimuovere la radice.",
+    "outdentUnderRoot": "È impossibile rimuovere la pellicola protettiva dalla parte inferiore dello schermo.",
+    "grandParentNotFound": "Nonno scomparso.",
+    "unwrapRoot": "È impossibile estrarre la radice.",
+    "unwrapWindow": "È impossibile aprire una finestra.",
+    "nothingToUnwrap": "Niente da disimballare (nessun bambino).",
+    "copyRoot": "Impossibile copiare la cartella principale dello schermo.",
+    "clipboardEmpty": "Area note vuota.",
+    "targetNotFound": "Bersaglio non trovato.",
+    "rootNoPasteSlot": "La radice non presenta un'area predisposta per l'applicazione di adesivi.",
+    "invalidPasteTarget": "Destinazione di incolla non valida.",
+    "wrapRoot": "È impossibile avvolgere la radice dello schermo.",
+    "screenOrSlotNotFound": "Schermo o slot non trovato.",
+    "mustBeUnder": "{type} deve essere sotto {parent}.",
+    "singleChildSlot": "Lo slot \"{slot}\" accetta solo un elemento.",
+    "noSlotForChild": "{type} non dispone di slot per ricevere l'elemento.",
+    "noChildAccepted": "{type} non accetta bambini.",
+    "rootNoSiblingsDrop": "La radice dell'elemento schermo non può avere elementi fratelli.",
+    "cannotDeleteLastScreen": "Impossibile eliminare l'ultima schermata.",
+    "orphanChildren": "{type} non dispone di slot di catalogo: {n, plural, one {# bambino orfano rimosso} other {# bambini orfani rimossi}} da \"{slot}\".",
+    "notBesideRoot": "Impossibile posizionarlo vicino alla radice."
+  },
+  "styleState": {
+    "normal": "Normale",
+    "hover": "Anteprima",
+    "active": "Espresso",
+    "disabled": "Disattivato"
+  },
+  "defaults": {
+    "scaffoldPreviewText": "{name} – anteprima",
+    "windowTitle": "Finestra",
+    "text": "Testo",
+    "button": "Pulsante"
+  },
+  "validate": {
+    "imageview_size_prop": "La prop size di una ImageView indica la dimensione in pixel dei dati grezzi (data / data_native): non cambia la dimensione mostrata di un'immagine path. Usare la proprietà di stile size.",
+    "tabs_scrollable_orientation": "indicatorsScrollable funziona solo con le schede in alto o in basso (North, South): il gioco lo disattiva per East e West.",
+    "vanilla_unseen_child": "{type} in {parent}.{slot}: mai visto nel gioco base (visto: {seen}). Resa e comportamento non garantiti.",
+    "palette_unknown": "Colore di palette sconosciuto «{name}» ({key}, {target}): colorDefault.{name} è nil nel gioco e l'intero foglio di stile fallisce.",
+    "absolute_layout_params": "AbsoluteLayout non accetta parametri (builtin.d.tl: function({TreeNodeId})): props, meta, classi e stile non vengono emessi; solo i figli.",
+    "duplicate_recipe_name": "Il nome della ricetta \"{name}\" è già utilizzato da un'altra schermata.",
+    "window_root_required": "Un elemento dell'interfaccia utente di tipo \"finestra\" deve avere una radice di tipo \"Window\".",
+    "window_close_inert": "Finestra chiudibile senza un gestore di chiusura o un identificativo: il pulsante di chiusura non avrà alcun effetto. Assegnategli un identificativo (Generale > Identificativo) oppure un gestore di chiusura.",
+    "window_root_meta": "La finestra radice non può avere {keys} (Generale): il sistema la \"avvolgerebbe\" e causerebbe un errore (\"La ricetta wrapper deve restituire un elemento figlio\"). È consentita solo la classe; inseriscila nel contenuto.",
+    "plugin_root_must_be_layout": "Plugin \"{name}\": la radice deve essere un layout (ad esempio, BoxLayout), non \"{type}\" – altrimenti si verificherà l'errore \"Recipe child must be a layout\".",
+    "window_not_root": "Una finestra può essere solo la radice di uno schermo.",
+    "window_on_non_window_screen": "Finestra radicata in un'area dello schermo che non è un elemento \"finestra\".",
+    "invalid_parent": "{type} deve essere un figlio di {parent}.",
+    "mono_slot_overflow": "Lo slot singolo \"{slot}\" di tipo \"{type}\" contiene {n} elementi (massimo 1).",
+    "boxlayout_xor": "BoxLayout non può utilizzare contemporaneamente i termini \"children\" e \"child\".",
+    "duplicate_meta_id": "L'ID \" {id} \" è duplicato nell'interfaccia.",
+    "vanilla_never_empty": "{type} senza {missing}: il gioco di base lo rileva sempre ({evidence}); se è vuoto, il gioco potrebbe bloccarsi.",
+    "class_invalid_chars": "Classe \"{cls}\": solo lettere, numeri e il carattere \"-\" vengono riconosciuti dai file .css.lua del gioco.",
+    "initial_xy_range": "{key} deve essere compreso tra [0, 1] (valore ricevuto: {value}).",
+    "css_rule_unscoped": "Regola CSS \"{selector}\" senza classe né R:: – influenzerà tutti gli elementi di questo tipo in tutto il progetto.",
+    "style_key_not_allowed": "Proprietà di stile {keys} su {target}: non previste per {elements} (né viste nel vanilla né della base comune)."
+  },
+  "cascade": {
+    "idNotSimulated": "identificativo #… non simulato",
+    "subPartNotSimulated": "sottoelemento Tipo: Parte non simulata",
+    "combinatorNotSimulated": "combinatore > * o lista non simulata",
+    "pseudoNotSimulated": "stato simulato non reale",
+    "emptySelector": "selettore vuoto"
+  },
+  "styles": {
+    "emittedAsIs": "Inviata così com'è; {reason}",
+    "notSimulated": "non simulato",
+    "noTargetHint": "Nessun elemento corrisponde: aggiungi la classe a un elemento (Ispeziona › Meta › classe)",
+    "noTarget": "nessun elemento",
+    "targetsHint": "{n, plural, one {# elemento selezionato} other {# elementi selezionati}}",
+    "targetsShort": "{n} elementi.",
+    "intro": "Una classe condivisa si applica a <b>tutti</b> gli elementi che possiedono quella classe. Per un singolo elemento, utilizzare Ispeziona > Stile.",
+    "newClass": "Nuova classe",
+    "noClasses": "Nessuna classe condivisa.",
+    "touchesSelection": "Si applica all'elemento selezionato",
+    "emptySelector": "(selettore vuoto)",
+    "moveUp": "Salita (rilasciata in precedenza)",
+    "moveDown": "Scendere (un'affermazione successiva, che prevale)",
+    "selector": "Selettore",
+    "fixHint": "⚠ Questo selettore non interessa alcun elemento: uno spazio indica un elemento <em>all'interno</em>. Volete forse dire [fix]?",
+    "fix": "Correggere",
+    "comment": "Commento",
+    "properties": "Proprietà",
+    "selectClass": "Seleziona una classe.",
+    "targetedElements": "Elementi selezionati ({n})",
+    "noTargets": "Nessuno: aggiungi la classe a un elemento (Ispeziona › Classi).",
+    "notPreviewed": "⚠ {reason}: la regola è scritta così com'è, ma l'anteprima non la mostra.",
+    "state": "Stato: [stato] (visibile nell'anteprima tramite Ispezione > Stile).",
+    "appliesToClass": "Si applica agli elementi con la classe",
+    "nodeHasClass": "Il nodo selezionato appartiene a questa classe",
+    "addClassToNodeHint": "Aggiungere questa classe al nodo selezionato",
+    "addClassToNode": "+ al nodo selezionato"
+  },
+  "insp": {
+    "screen": "Schermo",
+    "recipe": "Ricetta",
+    "fileBase": "File (fileBase)",
+    "kind": "Tipo",
+    "kindWindow": "Finestra",
+    "kindRecipe": "Ricetta",
+    "kindPlugin": "Plugin",
+    "noSelection": "Nessuna selezione effettuata. Cliccare su un elemento nell'anteprima o nell'albero.",
+    "noCatalog": "Catalogo mancante – Strumenti › Importare i contenuti del gioco…",
+    "namePlaceholder": "nome",
+    "nameHint": "Nome del nodo",
+    "filter": "Filtrare...",
+    "definedOnly": "Definite solo",
+    "issues": "⚠ {n, plural, one {# problema} other {# problemi}} — vedi Problemi",
+    "notesHint": "ⓘ Informazioni su {type}",
+    "props": "Proprietà",
+    "definedCount": "{n, plural, one {# definita} other {# definite}}",
+    "noProps": "Nessuna proposta.",
+    "general": "Generale",
+    "windowRootNote": "Finestra principale: né \"Attivo\" né \"Info-tooltip\" – il gioco avvolgerebbe la finestra e si bloccherebbe. Impostate queste opzioni sul contenuto della finestra.",
+    "remove": "Rimuovere {keys}",
+    "enabledHint": "meta.enabled – disabilitato: l'elemento è visualizzato in grigio, non risponde più e assume lo stile \"Disabilitato\"",
+    "enabled": "Attivo",
+    "tooltipHint": "meta.tooltip – testo visualizzato al passaggio del mouse sull'elemento",
+    "tooltip": "Informazione aggiuntiva",
+    "idHint": "meta.id – identificativo dell'elemento (selettore #id, ricerca per ID)",
+    "id": "Identificativo",
+    "style": "Stile",
+    "classes": "Lezioni",
+    "state": "Stato",
+    "noScreen": "Nessuno schermo.",
+    "initialValue": "valore iniziale",
+    "addUseState": "Aggiungere useState",
+    "notes": "Note",
+    "noNotes": "Nessuna valutazione disponibile per questo componente."
+  },
+  "loading": {
+    "messages": "Allineamento dei deviatoi...\nMiglioramento della redditività...\nInstallazione di una stazione...\nOttimizzazione delle coincidenze...\nNegoziazione con il sindaco...\nLubrificazione dei deviatoi...\nAssunzione di conducenti di tram...\nCalcolo della congestione nel centro città...\nSostituzione delle locomotive a vapore...\nInstallazione delle linee aeree di contatto...\nAggiustamento degli orari di punta...\nRisarcimento dei residenti...\nScavo di un tunnel sotto la collina...\nConsegna del carbone all'acciaieria...\nRifacimento della vernice degli autobus...\nNegoziazione dei diritti di atterraggio...\nRaccolta dei passeggeri smarriti...\nRisanamento di una linea in perdita...\nRinnovamento della flotta obsoleta...\nCostruzione di un ponte sospeso...\nOrdinazione di una nave cargo...\nDeviazione dal centro storico"
+  },
+  "catalog": {
+    "category": {
+      "windows": "Finestre",
+      "layouts": "Layout.\nDisposizioni.\nStrutture.\nImpostazioni.\nModelli",
+      "textImage": "Testo e immagine",
+      "controls": "Controlli",
+      "collections": "Collezioni",
+      "helpers": "Aiutanti al gusto di vaniglia",
+      "advanced": "Avanzato",
+      "all": "Tutti i componenti integrati"
+    },
+    "notes": {
+      "Window": "initialX / initialY sono normalizzati tra 0 e 1 (angolo in alto a sinistra), non in pixel.\nid (proprietà WindowParam) = identità singleton / byId – non Meta.id.\nAprire da un pulsante: utilizza lo stesso .script, recipes.X, wapi.addSingletonWindow (non utilizzare mai local api = …, non utilizzare mai util.useFn).\nDimensione: expanded=true + CSS !window-expanded.\nPadding: sulla Window sposta anche la barra del titolo e la croce di chiusura; solo per il contenuto, usa una regola Window!<classe> Window::Content.",
+      "BoxLayout": "Vuota (senza figli), la sua gravity non ha effetto nel gioco: una box vuota { -1, -1 } non fa da spaziatore e non spinge i vicini.\nPer uno spaziatore, usare «Spaziatore orizzontale / verticale» dalla palette (Component vuoto, schema del gioco).",
+      "Component": "Nessuno sfondo né dimensione minima nel gioco. Vuoto, con la classe horizontal-spacer o vertical-spacer, è lo spaziatore del gioco (vedi la palette).",
+      "FloatingLayout": "Sovrappone i suoi FloatingLayoutChild nella stessa cornice (badge, icona su un'immagine, pulsante in un angolo). Schema molto comune nel gioco (118 FloatingLayout, 296 figli).",
+      "FloatingLayoutChild": "Posiziona il suo item nel FloatingLayout: h e v come una gravity (-1 riempie, 0 inizio, 0.5 centro, 1 fine). overflowMode = Overflow: l'item può uscire dalla cornice (ignora padding e margini).",
+      "AbsoluteLayout": "`AbsoluteLayout` integrato è una funzione({TreeNodeId}) : TreeNodeId, non una ricetta; viene iniettata manualmente nel catalogo.\nNessun file Lua del gioco lo usa. Generato come builtin.AbsoluteLayout con i figli come semplice elenco: niente props né meta (classi, stile). AbsoluteLayoutChild ha solo localKey e item: nessuna posizione nota, da verificare nel gioco.",
+      "ScrollArea": "Sempre con contenuto (content) nel gioco base (52/52). Vuoto: probabile crash del gioco.\nNessuno sfondo nel gioco; si riduce allo spazio disponibile e scorre secondo horizontalPolicy / verticalPolicy (AlwaysOff = ritagliato senza barra, AlwaysOn, AsNeeded).",
+      "TextView": "Centrato verticalmente all'interno di un BoxLayout, senza essere allungato (osservato durante l'esecuzione, ma non presente nelle specifiche di base).",
+      "ImageView": "Dimensione mostrata: proprietà di stile size (la prop size indica i pixel di data / data_native e non agisce su un'immagine path; coord = griglia di un foglio di animazione con numFrames). Un backgroundColor non viene disegnato (visto nel gioco).",
+      "ComboBox": "Sempre con tutti gli elementi presenti nel gioco base (23/23).",
+      "ComboBoxItem": "Sempre con un contenuto (es. TextView) e un valore nel set di base (39/39).",
+      "Slider": "Orizzontale (difetto): si estende in larghezza, altezza 16 (file `builtin.css.lua`, parametro `Slider!horizontal`); verticale: il contrario.\nLa barra di scorrimento è centrata verticalmente all'interno dell'elemento (osservato nel gioco).",
+      "TextInputField": "Si estende in altezza e in larghezza nel suo layout (osservato in gioco, non presente nelle specifiche di base): estende anche il BoxLayout che lo contiene.\nLo sfondo copre l'intera altezza estesa; il testo inserito è centrato verticalmente (osservato in gioco).",
+      "ProgressBar": "Si estende su entrambi gli assi (gravità {-1, -1}, altezza 20 in builtin.css.lua): estende anche il layout del suo elemento genitore.",
+      "List": "selectionIndex / onSelect sono basati sull'indice 1 (indici Lua).\nNessuno sfondo nel gioco; si estende e segue la finestra: se manca spazio, l’elenco viene ritagliato e scorre (verticalScrollBarPolicy / horizontalScrollBarPolicy: AlwaysOff = ritagliato senza barra, AlwaysOn, AsNeeded). drawBackground: aspetto non verificato.",
+      "TextButton": "Helper, pulsante vanilla, react_util.makeTextButton.",
+      "DataTable": "⚠ Instabile con `rowKey` non di tipo entità: può causare un crash di React non recuperabile. Si consiglia di utilizzare `TableLayout` o `BoxLayout`."
+    }
+  },
+  "palette": {
+    "noCatalog": "Nessun catalogo disponibile. Strumenti › Importare i contenuti del gioco...",
+    "search": "Cerca un componente...",
+    "gridView": "Vista a griglia",
+    "listView": "Vista elenco",
+    "noResult": "Nessun risultato.",
+    "selectNode": "Seleziona un nodo nell'albero o nell'anteprima.",
+    "selectNodeShort": "Seleziona un nodo nell'albero o nell'anteprima",
+    "noProjectShort": "Nessun progetto aperto",
+    "insertChild": "Aggiungere in {target}",
+    "insertBefore": "Inserire prima di {target}",
+    "insertAfter": "Inserire dopo {target}",
+    "theSelection": "la selezione",
+    "presets": {
+      "HorizontalSpacer": {
+        "name": "Spaziatore orizzontale",
+        "tooltip": "Component vuoto con la classe horizontal-spacer, come gui_react_util.makeHorizontalSpacer() del gioco: occupa la larghezza libera e allontana i vicini."
+      },
+      "VerticalSpacer": {
+        "name": "Spaziatore verticale",
+        "tooltip": "Component vuoto con la classe vertical-spacer, come gui_react_util.makeVerticalSpacer() del gioco: occupa l'altezza libera e allontana i vicini."
+      }
+    }
+  },
+  "previewSettings": {
+    "title": "Impostazioni dell'anteprima",
+    "gameText": "Testo del gioco",
+    "gameTextHint": "Come l'opzione \"Interfaccia > Ridimensionamento del testo\": dimensioni definite nel file \"scaling.css.lua\"",
+    "scaleSmall": "Piccola",
+    "scaleMedium": "Media",
+    "scaleLarge": "Grande",
+    "asGame": "Come il gioco ({scale})",
+    "asGameUnknown": "Come il gioco (difficoltà: media)",
+    "textSize": "Dimensione del testo (Opzioni di gioco > Interfaccia > Ridimensionamento del testo)",
+    "backgrounds": "Immagini di sfondo per formato schermo",
+    "backgroundsHint": "Acquisizione del gioco per formato: ridimensionata all'altezza dello schermo simulato, centrata, proporzioni mantenute. Se non è selezionata un'immagine, viene utilizzata l'ultima immagine scelta come alternativa. La selezione \"Immagine\", \"Uniforme\" o \"Mascherata\" avviene nella barra di anteprima.",
+    "shown": "(visualizzato)",
+    "choose": "Scegliere...",
+    "forget": "Dimenticare questa immagine",
+    "colors": "Colori",
+    "hoverFill": "Anteprima – riempimento",
+    "hoverFillHint": "Riempimento dell'elemento sotto il cursore",
+    "hoverOutline": "Anteprima — contorno",
+    "hoverOutlineHint": "Evidenziare il bordo dell'elemento con il cursore",
+    "boxOutline": "Contorno \"Box\"",
+    "boxOutlineHint": "Contorno sottile di ogni elemento (nella casella \"Anteprima\")",
+    "selectedOutline": "Elemento selezionato",
+    "selectedOutlineHint": "Contorno dell'elemento selezionato",
+    "selectedWidthHint": "Spessore del bordo dell'elemento selezionato (da 1 a 8 px)",
+    "selectedWidth": "Spessore del bordo di selezione (px)",
+    "defaultColors": "Colori predefiniti"
+  },
+  "deploy": {
+    "noStagingArea": "Cartella staging non impostata: indicarla nelle Impostazioni (cartella «staging_area» delle mod locali del gioco).",
+    "manualFiles": "File senza intestazione dell'editor:\n{files}",
+    "handModified": "File generati modificati manualmente dall'ultima scrittura:\n{files}",
+    "overwriteConfirm": "{parts}\n\nSovrascrivere comunque? Le modifiche verranno perse (recuperabili solo se il progetto è versionato, ad esempio con git).\n\nOK = Sovrascrivi · Annulla = lascia questi file inalterati",
+    "missingHandlersConfirm": "Gestori selezionati nell'editor ma assenti nei vostri file:\n\n{list}\n\nAggiungere funzioni vuote subito prima di \"return handlers\"? (Nessun altro elemento viene modificato in questi file.)",
+    "noReturnHandlers": "{file}: \"gestori di ritorno\" non trovato, impossibile aggiungere — copiare i file stub da \"Problemi\".",
+    "fixErrorsBeforeBuild": "Correggere gli errori rilevati dal validatore prima della compilazione.",
+    "fixErrorsBeforeExport": "Correggere gli errori rilevati dal validatore prima dell'esportazione.",
+    "runtimeFails": "Il codice generato non funziona durante l'esecuzione ({n, plural, one {# errore} other {# errori}}) – vedere la sezione \"Problemi\".",
+    "runtimeSkipped": "Verifica di esecuzione ignorata: {reason}",
+    "tf3Running": "Transport Fever 3 è stato avviato: la mod installata verrà riconosciuta solo dopo aver ricaricato il Mod Hub o riavviato il gioco.\n\nInstallare comunque?",
+    "andMore": "... e {n, plurale, uno {# altro} altri {# altri}}",
+    "modifiedInStaging": "Questi file nella cartella \"staging\" sono stati modificati manualmente dall'ultima installazione:\n\n{list}{more}\n\nLo \"staging\" è un ambiente di sviluppo: si codifica nella cartella del progetto (versionata). Si dovrebbe comunque installare (questi file verranno sovrascritti)?",
+    "stagingExists": "La cartella \"staging\" esiste già e non ha una cronologia di installazione da parte dell'editore.\n{path}\n\nSostituire?",
+    "guiWritten": "File GUI scritte.",
+    "exportZip": "Esportazione ZIP: {path}",
+    "buildOk": "Build OK — {n, plural, one {# file} other {# files}} → {path}",
+    "installed": "Installato → {path}",
+    "fileIdPreserved": "(il file mod.io_fileid.txt è stato mantenuto)",
+    "neverBuilt": "Mai costruito",
+    "neverInstalled": "Mai installato",
+    "noProject": "Nessun progetto",
+    "fixErrors": "Correggere gli errori del validatore",
+    "lastBuild": "Ultima versione: {date}",
+    "staleBuild": "Progetto o sorgenti modificati: è necessario ricostruire",
+    "buildReady": "Versione di prova – non ancora installata dall'editore",
+    "installCurrent": "Installazione aggiornata",
+    "installStale": "Edificio più recente rispetto all'installazione"
+  },
+  "preview": {
+    "noProject": "Nessun progetto disponibile. Creare un progetto per visualizzare l'anteprima.",
+    "disclaimer": "Panoramica approssimativa (HTML/CSS) – la verità definitiva si rivela solo attraverso la pratica.",
+    "viewport": "Area di visualizzazione...\nFinestra di visualizzazione...\nVista...",
+    "resolutionsHint": "Risoluzioni schermo intero del gioco (menu Opzioni)",
+    "resolutionsReduced": "Elenco ridotto: rianalizza il gioco per ottenere le sue risoluzioni",
+    "backgroundFallback": "Nessuna immagine per gli schermi {ratio}: viene visualizzata l'ultima immagine selezionata. Immagini per formato: Visualizzazione › Impostazioni di anteprima…",
+    "backgroundHint": "Sfondo simulato (memorizzato). Immagini per formato dello schermo: Visualizzazione › Impostazioni di anteprima…",
+    "background": "Fondo",
+    "bgSolid": "Uni",
+    "bgHidden": "Mascherato",
+    "bgImage": "Immagine",
+    "zoomOut": "Zoom indietro",
+    "zoomIn": "Avanti",
+    "zoomPercent": "Zoom %",
+    "fitHint": "Regolare sullo schermo",
+    "fit": "Regolare",
+    "actualSizeHint": "Dimensione reale 100%",
+    "actualSize": "100%",
+    "boxesHint": "Mostra il contorno di tutti gli elementi (opzione salvata)",
+    "boxes": "Scatola",
+    "stateSim": "Simulazione dello stato:"
+  },
+  "tree": {
+    "hidden": "Mascherato",
+    "locked": "Bloccato",
+    "expand": "Aprire.\nSrotolare.\nDistendere.\nSviluppare",
+    "collapse": "Rispondi",
+    "slotBadge": "Slot \"{slot}\" del genitore",
+    "noProject": "Nessun progetto: File → Nuovo progetto o Apri.",
+    "delete": "Elimina",
+    "collapseAll": "Comprimi tutto (progetto attivo)",
+    "expandAll": "Espandi tutto (progetto attivo)",
+    "unsavedProject": "Progetto non salvato",
+    "expandProject": "Sviluppare il progetto",
+    "collapseProject": "Rispondi al progetto",
+    "dirty": "Modificato, non salvato",
+    "untitled": "Senza titolo"
+  },
+  "color": {
+    "groupNeutral": "Neutri",
+    "groupBase": "Fondo",
+    "groupAccent": "Accento",
+    "groupOther": "Gioco",
+    "choose": "Scegliere un colore",
+    "swatchPalette": "{title} – tavolozza del gioco: {name}",
+    "picker": "Selettore di colore",
+    "alpha": "Trasparenza (alpha)",
+    "r": "R",
+    "g": "V",
+    "b": "B",
+    "a": "A",
+    "opacityPercent": "Opacità in percentuale",
+    "currentPalette": "Palette del gioco: <b>{name}</b>{alpha} – qualsiasi modifica la sostituisce con un valore fisso.",
+    "currentAlpha": "(alpha {alpha})",
+    "paletteEntry": "{name} (palette di colori)",
+    "transparencies": "Trasparenze",
+    "noPalette": "Palette di gioco non disponibile: Strumenti › Importa i contenuti del gioco...",
+    "hex": "Esadecimale #rrvvbb"
+  },
+  "nodeClasses": {
+    "empty": "Nessuna classe. Una classe viene applicata a questo elemento, seguendo le regole di una classe condivisa (lo stesso stile viene applicato a più elementi).",
+    "editRule": "Modificare la regola in \"Classi condivise\"",
+    "rules": "{n, plural, one {règle} other {# règles}} ›",
+    "noRule": "Nessuna regola utilizza questa classe nel progetto (potrebbe provenire dal gioco)",
+    "createRule": "+ creare la regola",
+    "removeClass": "Rimuovi la classe {cls}",
+    "placeholder": "+ Classe (es. secondaria)",
+    "add": "Aggiungere",
+    "alsoApply": "Si applicano anche (per tipo):"
+  },
+  "nodeStyle": {
+    "gameDefault": "Impostazione predefinita: {file} — {selector}\nModificare questo valore comporta un sovraccarico per questo elemento.",
+    "game": "gioco",
+    "ownHint": "Definito in base a questo elemento",
+    "inheritedHint": "Ereditato dallo stato normale di questo elemento",
+    "own": "questo elemento",
+    "inherited": "Normale",
+    "inlineHint": "Stile inline (foglio di stile) obsoleto",
+    "inline": "inline",
+    "sharedClass": "Classe condivisa: {selector} — cliccare per aprire",
+    "defaultStyle": "Stile predefinito",
+    "stateStyle": "Applica lo stile quando l'elemento è {state} (:{key})",
+    "defined": "definito",
+    "empty": "Nessuno stile: aggiungere una proprietà.",
+    "emptyState": "Nessuno stile per lo stato {state}: aggiungi una proprietà.",
+    "hiddenGame": "+ {n, plural, one {# difetto del gioco non visualizzato} other {# difetti del gioco non visualizzati}} rilevati tramite l'anteprima (immagini, suoni, transizioni)",
+    "writtenIn": "Écrit dans le <code>.css.lua</code> de l’écran : [selectors]",
+    "nothingDefined": "Nessun valore è ancora definito per questo elemento in questo stato."
+  },
+  "styleKey": {
+    "axes": {
+      "wh": "l,h",
+      "xy": "x,y",
+      "trbl": "h,d,b,g",
+      "rgba": "r,v,b,a"
+    },
+    "size": {
+      "hint": "-1 = automatico"
+    },
+    "padding": {
+      "hint": "alto, destra, basso, sinistra"
+    },
+    "gravity": {
+      "label": "stiramento",
+      "hint": "-1 = si estende sull'asse; 0 / 0.5 / 1 = allineato all'inizio / al centro / alla fine"
+    },
+    "margin": {
+      "hint": "margine esterno: superiore, destra, inferiore, sinistra"
+    },
+    "minSize": {
+      "hint": "dimensione minima"
+    },
+    "maxSize": {
+      "hint": "dimensione massima (-1 = illimitata)"
+    },
+    "color": {
+      "label": "testo",
+      "hint": "colore del testo (r, v, b, a da 0 a 1)"
+    },
+    "backgroundColor": {
+      "label": "sfondo",
+      "hint": "colore di sfondo (r, v, b, a da 0 a 1)"
+    },
+    "backgroundColor1": {
+      "label": "sfondo 1",
+      "hint": "colore di sfondo principale dei pannelli (r, v, b, a da 0 a 1)"
+    },
+    "backgroundColor2": {
+      "label": "sfondo 2",
+      "hint": "secondo colore di sfondo (r, v, b, a da 0 a 1); non visualizzato nell'anteprima"
+    },
+    "shadowColor": {
+      "label": "ombre",
+      "hint": "colore dell'ombra (r, v, b, a da 0 a 1); non visualizzato nell'anteprima"
+    },
+    "borderColor": {
+      "label": "contorno",
+      "hint": "colore del contorno (r, v, b, a da 0 a 1); l'anteprima mostra 1 pixel"
+    },
+    "textAlignment": {
+      "label": "allineamento del testo",
+      "hint": "posizione del testo nel riquadro: 0 = sinistra/alto, 0.5 = centro, 1 = destra/basso (x, y). Allarga il riquadro (gravity -1 o size) per vederlo."
+    },
+    "anchorPoint": {
+      "label": "punto di ancoraggio",
+      "hint": "punto dell’elemento posto nella sua posizione (x, y in 0..1); non mostrato dall’anteprima"
+    },
+    "borderWidth": {
+      "label": "spessore del bordo",
+      "hint": "alto, destra, basso, sinistra (px); non mostrato dall’anteprima"
+    },
+    "fontSize": {
+      "label": "dimensione del testo",
+      "hint": "dimensione del carattere in px (sostituisce la classe font-scale-…)"
+    },
+    "textAutoWrap": {
+      "label": "a capo automatico",
+      "hint": "il testo va a capo se supera la larghezza; non mostrato dall’anteprima"
+    },
+    "visibility": {
+      "label": "visibilità",
+      "hint": "visible; hidden / transparent: invisibile; folded / none: escluso dal layout (valori vanilla)"
+    },
+    "fontWeight": {
+      "label": "spessore",
+      "hint": "spessore del carattere Lato (Mono… = a larghezza fissa)"
+    },
+    "innerSpacing": {
+      "hint": "spazio tra i figli di un layout (x, y)"
+    },
+    "outerSpacing": {
+      "hint": "margine interno di un layout attorno ai suoi figli (x, y)"
+    }
+  },
+  "propEditor": {
+    "notEditable": "Non modificabile ({type})",
+    "scalarHint": "Numero o testo: un numero viene scritto come numero, il resto tra virgolette.",
+    "numberListHint": "Numeri separati da virgole, es. 10, -1, 80 (columnWeights: -1 = larghezza naturale della colonna).",
+    "noState": "— stato —",
+    "unset": "Ripristina le impostazioni predefinite del motore",
+    "modeTitle": "Modalità: {mode}",
+    "modeAria": "Modalità {mode}",
+    "modeLiteral": "Letterale",
+    "modeEnum": "Enumerazione",
+    "modeState": "Stato",
+    "modeHandler": "Gestore",
+    "modeLua": "Lua",
+    "mustBeNumber": "{field} deve essere un numero.",
+    "outOfRange": "{field} deve essere compreso tra [0, 1] (valore ricevuto: {value}).",
+    "imageNotFound": "Immagine non trovata",
+    "pickIcon": "Selezionare un'icona dal menu del gioco (trascinare un'icona sull'elemento desiderato)",
+    "icons": "Icone...",
+    "functionName": "nomeFunzione",
+    "luaExpression": "espressione Lua"
+  },
+  "styleRows": {
+    "paletteName": "Couleur nommée de la palette du jeu, écrite colorDefault.<Nom> dans le .css.lua",
+    "textHint": "Numero, vero/falso, testo o elenco \"1, 2\"",
+    "addProperty": "+ Proprietà (dimensione, spaziatura, colore, ecc.)",
+    "notPreviewed": "Generato nel file .css.lua, ma non visualizzato nell'anteprima",
+    "remove": "Rimuovi questo valore",
+    "empty": "Nessuna proprietà.",
+    "helperNoStyle": "Componente di utilità: non punta a nessun elemento del gioco, quindi non può avere uno stile di elemento. Applica lo stile agli elementi che contiene.",
+    "keyRefused": "\"{key}\" non è una proprietà di {elements} (né vista nel vanilla su questo tipo né della base comune).",
+    "evidenceCommon": "base comune — non vista nel vanilla su questo tipo",
+    "rescanForKeys": "Elenco limitato alla base comune: rianalizza il gioco per ottenere le proprietà di ogni tipo.",
+    "notAllowed": "\"{key}\" non è una proprietà di {elements}: nessun effetto previsto nel gioco. Rimuovila (✕)."
+  },
+  "link": {
+    "detectFailed": "Errore di rilevamento.",
+    "browseCancelled": "Selezione della cartella annullata.",
+    "linkFailed": "Impossibile connettersi.",
+    "title": "Collegare Transport Fever 3",
+    "intro": "L'editor legge le definizioni di tipo \"Teal\" e i fogli di stile a partire dall'installazione del gioco. Nessun file del gioco viene copiato nel progetto.",
+    "root": "Cartella di installazione (TF3_ROOT)",
+    "browse": "Esplorare...",
+    "link": "Collegare il gioco"
+  },
+  "importDialog": {
+    "minimum": "Importo minimo",
+    "minimumHint": "La versione più veloce: include solo i font e le immagini di cui l'anteprima ha bisogno (finestre, pulsanti...). Il pannello \"Icone del gioco\" rimane quasi vuoto.",
+    "ui": "Tutte le immagini dell'interfaccia (.tga UI)",
+    "uiHint": "Versione più completa: tutte le icone e le immagini dell'interfaccia di gioco (file \"gui.zip\"), disponibili nel pannello \"Icone di gioco\".",
+    "all": "Tutte le immagini del gioco (.tga)",
+    "allHint": "Il più lungo: oltre all'interfaccia, include le immagini di altri elementi del gioco (missioni, ambienti, meccaniche...).",
+    "images": "{n, plural, one {# immagine} other {# immagini}}",
+    "counting": "calcolo...",
+    "moreTime": "— ogni livello aggiunge tempo di elaborazione",
+    "footer": "Le contenuto viene convertito una sola volta (copia locale); gli aggiornamenti vengono effettuati solo su vostra richiesta (Strumenti › Importare i contenuti del gioco...).",
+    "import": "Importare"
+  },
+  "diff": {
+    "new": "{n, plural, one {# nuovo} other {# nuovi}}",
+    "changed": "{n, plural, one {# modificato} other {# modificati}}",
+    "same": "{n, plural, one {# invariato} other {# invariati}}",
+    "removed": "{n, plural, one {# eliminato} other {# eliminati}}",
+    "stateNew": "nuovo",
+    "stateChanged": "modificato",
+    "stateSame": "invariato",
+    "stateRemoved": "eliminato",
+    "title": "Diffusione prima della scrittura dell'interfaccia grafica",
+    "intro": "Prima versione di questa sessione: controlla le modifiche ({summary}).",
+    "noFile": "nessun file",
+    "userFileTab": "il tuo file, creato una sola volta",
+    "userFileNote": "File per il tuo codice: creato ora, l'editor non lo modificherà più in seguito.",
+    "write": "Scrivere i file"
+  },
+  "icons": {
+    "maskHint": "maschera colorata in base allo stile",
+    "colorHint": "immagine a colori",
+    "itemHint": "{path}\n{w}×{h} px — {kind}\nTrascina nell'anteprima o nell'albero: ImageView",
+    "importMore": "Importare le immagini del gioco...",
+    "search": "Cerca un'icona...",
+    "loading": "Caricamento delle icone...",
+    "none": "Nessuna immagine del gioco importata.",
+    "minimumOnly": "Importazione minima: sono disponibili solo le immagini dell'anteprima.",
+    "groupNonUi": "Contenuti del gioco",
+    "groupOther": "Altre"
+  },
+  "newMod": {
+    "title": "Nuovo modello",
+    "intro": "Crea la struttura ad albero §7.2 e un progetto con una finestra e un pulsante \"Mod Hub\".",
+    "parentDir": "Cartella per i genitori",
+    "displayName": "Nome visualizzato",
+    "chooseParent": "Scegliere una cartella principale.",
+    "invalidModId": "modId non valido: [a-z0-9_]+",
+    "nameRequired": "Indicare un nome visualizzato.",
+    "create": "Creare"
+  },
+  "modDialog": {
+    "loading": "Caricamento dei metadati...",
+    "title": "Modello – metadati",
+    "name": "Nome",
+    "summary": "Riepilogo",
+    "description": "Descrizione",
+    "tags": "Tag (virgole)",
+    "url": "URL",
+    "author": "Autore",
+    "thumbnail": "Miniatura",
+    "imageFilter": "Immagine",
+    "thumbnailSaved": "Miniatura salvata (_metadata/0.png).",
+    "chooseImage": "Scegliere un'immagine...",
+    "saved": "Metadati salvati."
+  },
+  "dock": {
+    "layoutReset": "Configurazione ripristinata (backup illeggibile).",
+    "popoutFailed": "È impossibile aprire la finestra che si è staccata."
+  },
+  "progress": {
+    "catalog": "Catalogo e stili di gioco",
+    "fonts": "Regolamenti del gioco",
+    "images": "Immagini del gioco",
+    "title": "Importazione dei contenuti di gioco",
+    "phase": "{pct} % — {phase}",
+    "remaining": "Tempo rimanente: {time}",
+    "estimating": "calcolo in corso...",
+    "lessThan5s": "meno di 5 secondi",
+    "aboutSeconds": "circa {s} s",
+    "aboutMinutes": "circa {m} min",
+    "aboutMinutesSeconds": "circa {m} min {s} s",
+    "inventory": "Elenco delle immagini del gioco...",
+    "imagesImported": "{n, plural, one {# immagine importata} other {# immagini importate}}"
+  },
+  "unsaved": {
+    "title": "Modifiche non salvate",
+    "message": "Il progetto <b>{name}</b> presenta modifiche non salvate. Desidera salvarle {action}?",
+    "discard": "Non salvare",
+    "beforeQuit": "prima di uscire",
+    "beforeContinue": "prima di continuare"
+  },
+  "dnd": {
+    "moving": "Trasferimento...",
+    "forbidden": "Impossibile effettuare il deposito"
+  },
+  "cmdReason": {
+    "noSelection": "Nessuna selezione.",
+    "rootCannotBeCut": "La radice non può essere tagliata.",
+    "noInsertSlot": "Nessuno slot di inserimento disponibile.",
+    "rootCannotBeDeleted": "La radice dell'elemento schermo non può essere eliminata.",
+    "noElementWithClass": "Nessun elemento possiede questa classe.",
+    "recipeNamePrompt": "Nome della ricetta"
+  },
+  "runtime": {
+    "checkFailed": "Verifica impossibile: {reason}",
+    "errors": "{n, plural, one {# errore di esecuzione} other {# errori di esecuzione}} — vedi Problemi.",
+    "ok": "Il codice dell'interfaccia grafica funziona correttamente, senza errori.",
+    "gameErrors": "{n, plural, one {# errore di gioco} other {# errori di gioco}} — vedere Problemi.",
+    "noGameErrors": "Nessun errore di gioco correlato al mod.",
+    "harness": "Panca dell'esecuzione: {message}",
+    "runtimeUnreadable": "durata del gioco illeggibile: {message}",
+    "gameCrashed": "Il gioco si è bloccato durante l'ultima sessione (vedere gli errori riportati di seguito).",
+    "alreadyRunning": "Transport Fever 3 è già disponibile.",
+    "launching": "Transport Fever 3 è in arrivo...",
+    "logClean": "Registro del gioco ({when}): nessun errore relativo al mod.",
+    "logIssues": "Diario di gioco ({when}): {n, plural, one {# problema} other {# problemi}} relativi al mod.",
+    "inRecipe": "{message} (in {where})"
+  },
+  "propMenu": {
+    "unset": "Ripristina predefiniti",
+    "copy": "Copiare il valore"
+  },
+  "export": {
+    "renderNotFound": "non trovato",
+    "renderEmpty": "svuotato\nrimosso\ncancellato\nrendere vuoto\nsvuotare\nrimuovere\ncancellare\n...",
+    "done": "Esporta PNG: {path}",
+    "failed": "Esportazione impossibile: {message}",
+    "pickFolder": "Cartella di esportazione PNG",
+    "doneMany": "Esporta PNG: {n, plural, one {# file} other {# files}} in {dir}",
+    "interrupted": "Esportazione interrotta ({n, plural, one {# scritto} other {# scritti} }) : {message}"
+  },
+  "file": {
+    "projectFilter": "Progetto TFUI",
+    "defaultProjectName": "progetto.tfui.json"
+  },
+  "catalogErrors": {
+    "notLoaded": "Catalogo TF3 non caricato: impossibile risolvere gli slot.",
+    "sheetNotFound": "Foglio del gioco non disponibile: {sheet}",
+    "sheetFailed": "Errore nell'elaborazione di {sheet}: {error}",
+    "paletteFailed": "Errore nella palette: {error}",
+    "tgaPalette": "Formato TGA con palette non supportato",
+    "tgaType": "File TGA di tipo {type} non supportato",
+    "tgaBpp": "TGA: {bpp} bit non supportati"
+  },
+  "codePanel": {
+    "noProject": "Nessun progetto disponibile – non è possibile generare nulla.",
+    "generating": "Generazione..."
+  },
+  "problems": {
+    "unversioned": "Progetto non versionato: l'editor non salva copie dei file che sovrascrive con il suo consenso. Versiona la cartella del progetto (git init) per poter tornare indietro.",
+    "none": "Nessun problema.",
+    "sourceGame": "gioco",
+    "sourceExecution": "esecuzione",
+    "project": "progetto",
+    "orphanHandlers": "{file} non è più utilizzato da alcuna schermata (la schermata è stata eliminata o rinominata). L'editor non lo elimina: rinominarlo o eliminarlo manualmente.",
+    "missingHandlers": "{n, plural, one {Gestore mancante} other {Gestori mancanti}} in {file}: {names} — clic destro › Copia copia gli stub da incollare; l'aggiunta automatica è disponibile anche durante la scrittura dei file GUI."
+  },
+  "previewNode": {
+    "placeholderText": "(testo)",
+    "placeholderButton": "Pulsante",
+    "placeholderCard": "Scheda",
+    "closeButton": "Pulsante di chiusura (disegnato dal motore, con proprietà \"chiudibile\" impostata su \"vero\")",
+    "imageNotFound": "Immagine non trovata: {path}",
+    "imageNoPath": "Immagine senza percorso",
+    "emptyScroll": "{type} (vuoto) — trascina qui gli elementi"
+  },
+  "store": {
+    "noChildSlot": "{type} non ha slot figlio.",
+    "invalidJson": "JSON non valido"
+  },
+  "settingsErrors": {
+    "tauriRequired": "La configurazione dei parametri richiede l'utilizzo dell'applicazione Tauri (pnpm tauri dev)."
+  },
+  "backend": {
+    "io": {
+      "read": "Impossibile leggere ({path}): {error}",
+      "write": "Impossibile scrivere in ({path}): {error}",
+      "mkdirParents": "Impossibile creare le cartelle genitori ({path}): {error}",
+      "mkdir": "Impossibile creare la cartella ({path}): {error}",
+      "remove": "Eliminazione impossibile ({path}): {error}",
+      "readDir": "Impossibile leggere il file ({path}): {error}",
+      "create": "Creazione impossibile ({path}): {error}",
+      "copy": "Copia impossibile {from} → {to}: {error}",
+      "imageFormat": "Formato immagine non supportato ({path})",
+      "missingPathHeader": "Percorso mancante (intestazione x-path)",
+      "binaryBodyExpected": "Corpo binario previsto",
+      "notJsonObject": "Considerando un oggetto JSON: {path}",
+      "jsonSerialize": "Serializzazione JSON impossibile: {error}"
+    },
+    "zip": {
+      "open": "Impossibile aprire il file zip ({path}): {error}",
+      "invalid": "File ZIP non valido ({path}): {error}",
+      "entry": "Voce zip n.{index} illeggibile: {error}",
+      "entryName": "Nome del file zip n.{index} illeggibile: {error}",
+      "entryNotFound": "Element non trovato \"{entry}\": {error}",
+      "readEntry": "Impossibile leggere l'elemento \"{entry}\": {error}"
+    },
+    "game": {
+      "rootNotFound": "La cartella TF3_ROOT non è stata trovata: {path}",
+      "folderMissing": "File mancante: {path}",
+      "rootValid": "Installazione TF3 valida (file builtin.d.tl trovato): {path}",
+      "builtinMissing": "File mancante: {path} — scegliete la cartella di installazione di Transport Fever 3.",
+      "notDetected": "Nessuna installazione TF3 rilevata automaticamente. {detail}",
+      "emptyRelative": "Percorso relativo vuoto.",
+      "forbiddenRelative": "Percorso relativo non consentito: {path}",
+      "outsideRoot": "Percorso al di fuori della directory TF3_ROOT.",
+      "readContent": "Impossibile leggere il contenuto del file ({path}): {error}",
+      "appDataCreate": "Impossibile creare la cartella dei dati dell'applicazione: {error}",
+      "catalogWrite": "Impossibile scrivere il catalogo: {error}",
+      "styleVocabWrite": "Impossibile scrivere il vocabolario degli stili: {error}",
+      "exeNotFound": "File eseguibile non trovato: {path}",
+      "stagingInvalid": "Problema di configurazione del sistema.",
+      "launchFailed": "Impossibile avviare il gioco: {error}",
+      "elevationRequired": "Il gioco richiede elevate autorizzazioni.",
+      "logNotFound": "File di gioco non trovata: {path}"
+    },
+    "cache": {
+      "invalidPath": "Percorso di cache non valido: {path}",
+      "missing": "File non trovato: {path}",
+      "missingHeader": "Intestazione mancante: {name}",
+      "mkdir": "Impossibile creare la cartella di cache: {error}",
+      "write": "Impossibile scrivere nella cache: {error}",
+      "remove": "Impossibile eliminare la cache: {error}",
+      "readBaseContent": "Lettura di base/contenuto impossibile: {error}",
+      "zipInvalid": "File ZIP non valido {path}: {error}",
+      "index": "Indice delle immagini non disponibile: {error}"
+    },
+    "deploy": {
+      "modRootNotFound": "modRoot non trovato: {path}",
+      "cleanBuild": "Impossibile pulire la build: {error}",
+      "buildNotFound": "Edificio introvabile: {path}",
+      "refuseTf3Root": "La directory di installazione non deve essere situata sotto la directory TF3_ROOT ({path}).",
+      "modFolderNotFound": "File di configurazione modificato non trovato: {path}"
+    },
+    "teal": {
+      "noConfig": "nessuna configurazione tlconfig.lua trovata – verifica Teal ignorata.",
+      "noTl": "\"tl\" non trovato nel percorso di sistema. Verifica di Teal ignorata.",
+      "noFiles": "nessun file GUI da verificare.",
+      "ok": "Controllo TL completato con successo.",
+      "failed": "Controllo TL fallito (nessun output)."
+    },
+    "mod": {
+      "folderExists": "La cartella esiste già: {path}",
+      "createGui": "Impossibile creare il contenuto/l'interfaccia grafica: {error}",
+      "createMetadata": "Impossibile creare i _metadati: {error}",
+      "thumbnailSave": "Impossibile salvare l'anteprima: {error}",
+      "thumbnailCopy": "Impossibile copiare l'anteprima: {error}"
+    },
+    "locales": {
+      "invalidCode": "Codice lingua non valido: {code}"
+    },
+    "harness": {
+      "enumUnknown": "valore sconosciuto per l'enum {name}: {value}",
+      "wrongType": "{field} partecipa a \"{kind}\", ricevuto {got}",
+      "vectorExpected": "{field} richiede un {type}: scrivere api.type.{type}.new(…), non una tabella (ricevuto {got})",
+      "engineLayoutRule": "il gioco rifiuta: «{message}» ({where}) — cade l'intera interfaccia",
+      "unknownField": "il campo \"{field}\" non esiste in {param}",
+      "moduleSimulated": "modulo {module} simulato (Teal non caricato)",
+      "moduleNotFound": "modulo non trovato: {module}",
+      "builtinTypeNil": "builtin.type.{name} non esiste (valore nullo)",
+      "wrapperMustReturnChild": "La ricetta wrapper deve restituire un elemento figlio: \"{recipe}\" deve restituire un {expected}, ma restituisce un {got} – il programma si blocca (asserzione activeNodeIds)",
+      "tooDeep": "profondità di rendering eccessiva in {path}",
+      "unknownRecipe": "ricetta sconosciuta: {recipe}",
+      "luaErrorIn": "Errore Lua in {where}: {error}",
+      "luaErrorInHandler": "Errore Lua in {handler} ({recipe}, {path}): {error}",
+      "syntax": "Sintassi Lua: {error}",
+      "loadError": "Errore durante il caricamento: {error}",
+      "noDataFunction": "Nessuna funzione `data()` presente in {chunk}",
+      "dataError": "Errore in data(): {error}",
+      "dataMustReturnTable": "`data()` deve restituire una tabella di risultati",
+      "exportNotRecipe": "L'esportazione di \"{name}\" non è una ricetta",
+      "singletonNotRecipe": "addSingletonWindow riceve qualcosa di diverso da una ricetta",
+      "syntaxIn": "Sintassi Lua ({chunk}): {error}",
+      "loadErrorIn": "Errore durante il caricamento di {chunk}: {error}",
+      "errorIn": "Errore in {chunk}: {error}",
+      "dataMustReturnTableIn": "{chunk}: la funzione `data()` deve restituire una tabella"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "mod": {
+    "modId": "tfui_example",
+    "modRoot": "mod",
+    "guiDir": "gui"
+  },
+  "screens": [
+    {
+      "id": "screen-main",
+      "fileBase": "main_gui",
+      "recipeName": "TfuiExampleMainWindow",
+      "kind": "window",
+      "state": [
+        { "name": "label", "initial": "hello" }
+      ],
+      "root": {
+        "id": "node-window",
+        "type": "Window",
+        "name": "Window",
+        "props": {
+          "title": { "kind": "literal", "value": "Exemple TFUI" },
+          "initialX": { "kind": "literal", "value": 0.1 },
+          "initialY": { "kind": "literal", "value": 0.1 },
+          "expanded": { "kind": "literal", "value": true }
+        },
+        "meta": {
+          "id": "tfui_example.main",
+          "class": ["tfui-example-window"]
+        },
+        "slots": {
+          "content": [
+            {
+              "id": "node-box",
+              "type": "BoxLayout",
+              "name": "BoxLayout",
+              "props": {
+                "orientation": { "kind": "enum", "value": "Orientation.Vertical" }
+              },
+              "meta": {
+                "class": ["my-root"]
+              },
+              "slots": {
+                "children": [
+                  {
+                    "id": "node-text-1",
+                    "type": "TextView",
+                    "name": "TextView",
+                    "props": {
+                      "text": { "kind": "state", "stateVar": "label" }
+                    },
+                    "meta": {},
+                    "slots": {}
+                  },
+                  {
+                    "id": "node-text-2",
+                    "type": "TextView",
+                    "name": "TextView",
+                    "props": {
+                      "text": { "kind": "literal", "value": "Ligne 2" }
+                    },
+                    "meta": {},
+                    "slots": {}
+                  },
+                  {
+                    "id": "node-btn",
+                    "type": "Button",
+                    "name": "Button",
+                    "props": {
+                      "onClick": { "kind": "handler", "fn": "onApplyClick" }
+                    },
+                    "meta": {},
+                    "slots": {
+                      "content": [
+                        {
+                          "id": "node-btn-label",
+                          "type": "TextView",
+                          "name": "TextView",
+                          "props": {
+                            "text": { "kind": "literal", "value": "Appliquer" }
+                          },
+                          "meta": {},
+                          "slots": {}
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "header": []
+        }
+      },
+      "previewViewport": { "w": 1920, "h": 1080 }
+    }
+  ],
+  "styleRules": [
+    {
+      "id": "rule-1",
+      "selector": "BoxLayout!my-root",
+      "props": {
+        "innerSpacing": [12, 10],
+        "outerSpacing": [0, 0]
+      }
+    },
+    {
+      "id": "rule-2",
+      "selector": "Window!tfui-example-window!window-expanded",
+      "props": {
+        "size": [800, 500]
+      }
+    }
+  ],
+  "catalogHash": "reference"
+}

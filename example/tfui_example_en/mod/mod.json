@@ -1,0 +1,19 @@
+{
+  "cosmetic": false,
+  "dependencies": null,
+  "incompatibilities": null,
+  "modId": "tfui_example_en",
+  "postRunScript": {
+    "fileName": ""
+  },
+  "preRunScript": {
+    "fileName": ""
+  },
+  "revision": 1,
+  "runScript": {
+    "fileName": ""
+  },
+  "severityAdd": "None",
+  "severityRemove": "None",
+  "visible": true
+}
