@@ -306,6 +306,18 @@ export function validateProject(
         }
       }
 
+      // Onglet sans titre : son en-tête est son `indicator` (TabWidgetChildParam
+      // n’a ni title ni text) ; vide, l’onglet n’affiche rien en jeu.
+      if (node.type === "TabWidgetChild" && !(node.slots.indicator ?? []).some((c) => !c.hidden)) {
+        issues.push({
+          severity: "warning",
+          code: "tab_without_title",
+          message: t("validate.tab_without_title"),
+          screenId: screen.id,
+          nodeId: node.id,
+        });
+      }
+
       // stylesheetutil.lua ne lit que `![%a%d%-]+` : une classe avec `_`, un
       // point… ne peut être visée par aucune règle .css.lua.
       for (const cls of node.meta.class ?? []) {

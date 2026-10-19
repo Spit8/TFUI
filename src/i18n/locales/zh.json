@@ -316,7 +316,8 @@
     "scaffoldPreviewText": "{name} — 预览",
     "windowTitle": "窗口",
     "text": "文本",
-    "button": "按钮"
+    "button": "按钮",
+    "tabTitle": "标签页"
   },
   "validate": {
     "imageview_size_prop": "ImageView 的 size 属性表示原始数据（data / data_native）的像素尺寸：它不会改变 path 图片的显示大小。请使用样式属性 size。",
@@ -339,7 +340,8 @@
     "class_invalid_chars": "类 “{cls}”：只有字母、数字和“-”符号会被游戏中的 .css.lua 文件读取。",
     "initial_xy_range": "{key} 的值必须在 [0, 1] 范围内（已接收到 {value}）。",
     "css_rule_unscoped": "CSS 规则 \"{selector}\" 不使用类或伪类 — 它将影响所有此类元素，在整个游戏中。",
-    "style_key_not_allowed": "{target} 上的样式属性 {keys}：不适用于 {elements}（原版中未使用，也不属于通用基础属性）。"
+    "style_key_not_allowed": "{target} 上的样式属性 {keys}：不适用于 {elements}（原版中未使用，也不属于通用基础属性）。",
+    "tab_without_title": "标签页没有标题：其 indicator 为空，游戏中标签头将为空白。将一个 TextView 拖入该标签页（内容已占用时它会放入 indicator）。"
   },
   "cascade": {
     "idNotSimulated": "标识符 #… 未模拟",

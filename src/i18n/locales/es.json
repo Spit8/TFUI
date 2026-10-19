@@ -316,7 +316,8 @@
     "scaffoldPreviewText": "{name} — vista previa",
     "windowTitle": "Ventana",
     "text": "Texto",
-    "button": "Botón"
+    "button": "Botón",
+    "tabTitle": "Pestaña"
   },
   "validate": {
     "imageview_size_prop": "La prop size de una ImageView da el tamaño en píxeles de los datos en bruto (data / data_native): no cambia el tamaño mostrado de una imagen path. Usar la propiedad de estilo size.",
@@ -339,7 +340,8 @@
     "class_invalid_chars": "Clase \"{cls}\": solo se leen letras, números y el signo \"-\" mediante los archivos .css.lua del juego.",
     "initial_xy_range": "{key} debe estar en el rango [0, 1] (valor recibido: {value}).",
     "css_rule_unscoped": "Regla CSS \"{selector}\" sin clase ni R:: — afectará a todos los elementos de este tipo en todo el juego.",
-    "style_key_not_allowed": "Propiedad(es) de estilo {keys} en {target}: no prevista(s) para {elements} (ni vista(s) en vanilla ni de la base común)."
+    "style_key_not_allowed": "Propiedad(es) de estilo {keys} en {target}: no prevista(s) para {elements} (ni vista(s) en vanilla ni de la base común).",
+    "tab_without_title": "Pestaña sin título: su indicator está vacío y la cabecera aparecerá vacía en el juego. Suelta una TextView en la pestaña (va a indicator si el contenido ya está ocupado)."
   },
   "cascade": {
     "idNotSimulated": "Identificador: #… No simulado",

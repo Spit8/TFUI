@@ -316,7 +316,8 @@
     "scaffoldPreviewText": "{name} — preview",
     "windowTitle": "Window",
     "text": "Text",
-    "button": "Button"
+    "button": "Button",
+    "tabTitle": "Tab"
   },
   "validate": {
     "imageview_size_prop": "An ImageView's size prop gives the pixel size of raw data (data / data_native): it does not change the displayed size of a path image. Use the size style property.",
@@ -339,7 +340,8 @@
     "class_invalid_chars": "Class \"{cls}\": Only letters, numbers, and the hyphen \"-\" are read by the game's .css.lua files.",
     "initial_xy_range": "{key} must be within the range of [0, 1] (received {value}).",
     "css_rule_unscoped": "CSS rule \"{selector}\" without a class or R:: selector – it will affect all elements of this type throughout the entire game.",
-    "style_key_not_allowed": "Style propert(y/ies) {keys} on {target}: not expected for {elements} (neither seen in vanilla nor part of the common base)."
+    "style_key_not_allowed": "Style propert(y/ies) {keys} on {target}: not expected for {elements} (neither seen in vanilla nor part of the common base).",
+    "tab_without_title": "Tab without a title: its indicator is empty, so the tab header will be blank in game. Drop a TextView into the tab (it goes to indicator once the content is filled)."
   },
   "cascade": {
     "idNotSimulated": "Identifier #: ... not simulated",

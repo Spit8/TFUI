@@ -50,5 +50,11 @@ export function inlineEditTarget(node: UiNode): InlineEditTarget {
       if (text !== null) return { mode: "text", nodeId: texts[0]!.id, prop: "text", value: text };
     }
   }
+  if (node.type === "TabWidgetChild") {
+    // Titre de l’onglet : la TextView de son `indicator`.
+    const title = (node.slots.indicator ?? []).find((c) => TEXT_TYPES.has(c.type) && !c.hidden);
+    const text = title ? literalText(title, "text") : null;
+    if (title && text !== null) return { mode: "text", nodeId: title.id, prop: "text", value: text };
+  }
   return byName;
 }

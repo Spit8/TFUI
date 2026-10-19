@@ -316,7 +316,8 @@
     "scaffoldPreviewText": "{name} — Vorschau",
     "windowTitle": "Fenster",
     "text": "Texte",
-    "button": "Schaltfläche"
+    "button": "Schaltfläche",
+    "tabTitle": "Tab"
   },
   "validate": {
     "imageview_size_prop": "Die size-Prop einer ImageView gibt die Pixelgröße der Rohdaten an (data / data_native): Sie ändert nicht die angezeigte Größe eines path-Bildes. Die Stileigenschaft size verwenden.",
@@ -339,7 +340,8 @@
     "class_invalid_chars": "Klasse \"{cls}\": Nur Buchstaben, Zahlen und \"-\" werden von den CSS-Dateien des Spiels gelesen.",
     "initial_xy_range": "{key} muss im Bereich [0, 1] liegen (erhalten: {value}).",
     "css_rule_unscoped": "CSS-Regel \"{selector}\" ohne Klasse oder R:: – sie beeinflusst alle Elemente dieses Typs im gesamten Spiel.",
-    "style_key_not_allowed": "Stileigenschaft(en) {keys} auf {target}: für {elements} nicht vorgesehen (weder im Vanilla-Spiel gesehen noch Teil der gemeinsamen Basis)."
+    "style_key_not_allowed": "Stileigenschaft(en) {keys} auf {target}: für {elements} nicht vorgesehen (weder im Vanilla-Spiel gesehen noch Teil der gemeinsamen Basis).",
+    "tab_without_title": "Tab ohne Titel: sein indicator ist leer, die Registerkarte bleibt im Spiel leer. Ziehe eine TextView in den Tab (sie landet in indicator, sobald der Inhalt belegt ist)."
   },
   "cascade": {
     "idNotSimulated": "Identifikator #… nicht simuliert",

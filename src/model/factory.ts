@@ -10,6 +10,7 @@ import type {
 import { findPreset } from "./palettePresets";
 import { createId } from "./uuid";
 import { applyNewWindowDefaults } from "./windowDefaults";
+import { t } from "../i18n";
 
 function toPropValue(value: unknown): PropValue {
   if (
@@ -147,6 +148,14 @@ export function createStarterNode(
   if (preset && preset.type === type) {
     node.meta.class = [...preset.classes];
     if (presetName) node.name = presetName;
+    return { node, styles: [] };
+  }
+  if (type === "TabWidgetChild") {
+    // Titre de l’onglet : TextView dans `indicator`, classe des onglets
+    // vanilla (company.tl, account.tl : `font-scale-tab-widget-indicator`).
+    const title = createButtonLabel(t("defaults.tabTitle"), catalog);
+    title.meta.class = ["font-scale-tab-widget-indicator"];
+    node.slots.indicator = [title];
     return { node, styles: [] };
   }
   if (type !== "Button" && type !== "ToggleButton") return { node, styles: [] };

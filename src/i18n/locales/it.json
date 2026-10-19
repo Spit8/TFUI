@@ -316,7 +316,8 @@
     "scaffoldPreviewText": "{name} — anteprima",
     "windowTitle": "Finestra",
     "text": "Testo",
-    "button": "Pulsante"
+    "button": "Pulsante",
+    "tabTitle": "Scheda"
   },
   "validate": {
     "imageview_size_prop": "La prop size di una ImageView indica la dimensione in pixel dei dati grezzi (data / data_native): non cambia la dimensione mostrata di un'immagine path. Usare la proprietà di stile size.",
@@ -339,7 +340,8 @@
     "class_invalid_chars": "Classe \"{cls}\": solo lettere, numeri e il carattere \"-\" vengono riconosciuti dai file .css.lua del gioco.",
     "initial_xy_range": "{key} deve essere compreso tra [0, 1] (valore ricevuto: {value}).",
     "css_rule_unscoped": "Regola CSS \"{selector}\" senza classe né R:: – influenzerà tutti gli elementi di questo tipo in tutto il progetto.",
-    "style_key_not_allowed": "Proprietà di stile {keys} su {target}: non previste per {elements} (né viste nel vanilla né della base comune)."
+    "style_key_not_allowed": "Proprietà di stile {keys} su {target}: non previste per {elements} (né viste nel vanilla né della base comune).",
+    "tab_without_title": "Scheda senza titolo: il suo indicator è vuoto, l’intestazione sarà vuota nel gioco. Trascina una TextView nella scheda (va in indicator se il contenuto è già occupato)."
   },
   "cascade": {
     "idNotSimulated": "identificativo #… non simulato",

@@ -1,5 +1,5 @@
 import type { Catalog } from "../catalog/types";
-import { primaryInsertSlot } from "../model/slots";
+import { insertSlotFor } from "../model/slots";
 import { canPlaceType, findNode } from "../model/treeOps";
 import type { TfuiProject } from "../model/types";
 import { t } from "../i18n";
@@ -47,7 +47,7 @@ export function planPaletteInsert(
   const targetType = loc.node.type;
 
   if (mode === "child") {
-    const slot = primaryInsertSlot(targetType, catalog);
+    const slot = insertSlotFor(loc.node, catalog);
     if (!slot) {
       return { ok: false, reason: t("ops.noChildAccepted", { type: targetType }), targetType };
     }

@@ -16,7 +16,7 @@ import {
   removeScreen as removeScreenOp,
   updateScreenMeta as updateScreenMetaOp,
 } from "../model/screenOps";
-import { migrateProjectSlots, primaryInsertSlot, violatesSlotLayoutRule } from "../model/slots";
+import { insertSlotFor, migrateProjectSlots, violatesSlotLayoutRule } from "../model/slots";
 import {
   canDrop,
   canPlaceType,
@@ -579,7 +579,7 @@ export const useProjectStore = create<ProjectState>()(
       if (!screen) return false;
       const parent = getNodeById(screen.root, parentId);
       if (!parent) return false;
-      const targetSlot = slot ?? primaryInsertSlot(parent.type);
+      const targetSlot = slot ?? insertSlotFor(parent);
       if (!targetSlot) {
         set((s) => {
           s.lastDropError = t("store.noChildSlot", { type: parent.type });

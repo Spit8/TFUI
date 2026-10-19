@@ -316,7 +316,8 @@
     "scaffoldPreviewText": "{name} — aperçu",
     "windowTitle": "Fenêtre",
     "text": "Texte",
-    "button": "Bouton"
+    "button": "Bouton",
+    "tabTitle": "Onglet"
   },
   "validate": {
     "imageview_size_prop": "La prop size d’une ImageView donne la taille en pixels des données brutes (data / data_native) : elle ne change pas la taille affichée d’une image path. Utiliser la propriété de style size.",
@@ -339,7 +340,8 @@
     "class_invalid_chars": "Classe « {cls} » : seuls lettres, chiffres et « - » sont lus par les feuilles .css.lua du jeu.",
     "initial_xy_range": "{key} doit être dans [0, 1] (reçu {value}).",
     "css_rule_unscoped": "Règle CSS « {selector} » sans classe ni R:: — elle touchera tous les éléments de ce type dans tout le jeu.",
-    "style_key_not_allowed": "Propriété(s) de style {keys} sur {target} : non prévue(s) pour {elements} (ni vue(s) en vanilla, ni du socle commun)."
+    "style_key_not_allowed": "Propriété(s) de style {keys} sur {target} : non prévue(s) pour {elements} (ni vue(s) en vanilla, ni du socle commun).",
+    "tab_without_title": "Onglet sans titre : son indicator est vide, l’en-tête sera vide en jeu. Déposez une TextView dans l’onglet (elle va dans indicator si le contenu est déjà pris)."
   },
   "cascade": {
     "idNotSimulated": "identifiant #… non simulé",

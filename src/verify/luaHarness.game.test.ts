@@ -4,7 +4,7 @@ import { FIXTURES_SKIP_MESSAGE, fixturesLinked } from "../catalog/fixtures";
 import { generateProject } from "../codegen/generate";
 import { genHandlersFile, handlersModulePath } from "../codegen/handlersFile";
 import { setElementStyleValue } from "../model/elementStyle";
-import { createStarterNode } from "../model/factory";
+import { createNode, createStarterNode } from "../model/factory";
 import { createModScaffoldProject } from "../model/modProject";
 import { createId } from "../model/uuid";
 import type { TfuiProject, UiNode } from "../model/types";
@@ -90,6 +90,28 @@ describe.skipIf(!fixturesLinked())("banc d’exécution Lua (runtime React du je
     );
     const report = await run(project);
     expect(report.rendered).toBeGreaterThan(5);
+    expect(errors(report)).toEqual([]);
+  });
+
+  it("des onglets créés depuis la palette (titre dans indicator) s’exécutent", async () => {
+    const tabs = createNode("TabWidget");
+    tabs.slots.tabs = [1, 2].map((n) => {
+      const tab = createStarterNode("TabWidgetChild").node;
+      tab.props.value = { kind: "literal", value: n };
+      const body = createNode("TextView");
+      body.props.text = { kind: "literal", value: `Contenu ${n}` };
+      tab.slots.item = [body];
+      return tab;
+    });
+    const project = withWindowRoot(
+      createModScaffoldProject({ modId: "tfui_test", displayName: "Test", catalogHash: "" }),
+      (root) => {
+        const layout = root.slots.content![0]!;
+        const content = [{ ...layout, slots: { ...layout.slots, children: [...(layout.slots.children ?? []), tabs] } }];
+        return { ...root, slots: { ...root.slots, content } };
+      },
+    );
+    const report = await run(project);
     expect(errors(report)).toEqual([]);
   });
 

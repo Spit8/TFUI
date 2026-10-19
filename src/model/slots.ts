@@ -120,6 +120,31 @@ export function primaryInsertSlot(
   return slots[0] ?? null;
 }
 
+/**
+ * Slots de repli quand le slot principal, mono, est déjà occupé : le titre
+ * d’un onglet (`TabWidgetChild.indicator`, une TextView dans le vanilla).
+ */
+const SECONDARY_INSERT_SLOTS: Record<string, string[]> = {
+  TabWidgetChild: ["indicator"],
+};
+
+/**
+ * Slot où insérer un enfant « dans » `parent` : le slot principal, sauf s’il
+ * n’accepte qu’un enfant et en a déjà un ; alors le premier slot de repli
+ * libre (titre d’onglet). Sans repli possible, le slot principal (le refus
+ * « déjà occupé » reste expliqué par canPlaceType).
+ */
+export function insertSlotFor(
+  parent: { type: string; slots: Record<string, unknown[]> },
+  catalog?: Catalog | null,
+): string | null {
+  const primary = primaryInsertSlot(parent.type, catalog);
+  if (!primary) return null;
+  const occupied = (s: string) => !isMultiSlot(parent.type, s, catalog) && (parent.slots[s]?.length ?? 0) > 0;
+  if (!occupied(primary)) return primary;
+  return (SECONDARY_INSERT_SLOTS[parent.type] ?? []).find((s) => !occupied(s)) ?? primary;
+}
+
 /** Renommages de slots obsolètes (éditeur → catalogue). */
 const SLOT_RENAMES: Record<string, Record<string, string | null>> = {
   List: { items: "children" },

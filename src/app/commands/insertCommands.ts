@@ -4,7 +4,7 @@ import {
   resolveCategory,
 } from "../../catalog/overrides";
 import { getActiveCatalog } from "../../catalog/activeCatalog";
-import { primaryInsertSlot } from "../../model/slots";
+import { insertSlotFor } from "../../model/slots";
 import { canPlaceType, findNode } from "../../model/treeOps";
 import { useProjectStore } from "../../store/projectStore";
 import { registerCommands } from "./registry";
@@ -47,7 +47,7 @@ export function buildTypeMenuCommands(
           return true;
         }
         if (prefix === "node.addChild") {
-          const slot = primaryInsertSlot(loc.node.type, catalog);
+          const slot = insertSlotFor(loc.node, catalog);
           if (!slot) return false;
           return canPlaceType(
             loc.node.type,
@@ -79,7 +79,7 @@ export function buildTypeMenuCommands(
         const catalog = getActiveCatalog();
         if (prefix === "node.wrap") return undefined;
         if (prefix === "node.addChild") {
-          const slot = primaryInsertSlot(loc.node.type, catalog);
+          const slot = insertSlotFor(loc.node, catalog);
           if (!slot) return t("cmdReason.noInsertSlot");
           const r = canPlaceType(
             loc.node.type,
