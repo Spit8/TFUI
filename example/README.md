@@ -26,5 +26,3 @@ Fenêtre « Aperçu du réseau » / “Network overview” (1040 × 660) :
 npx tsx tools/dev/build-example-mod.ts example/tfui_example_fr fr
 npx tsx tools/dev/build-example-mod.ts example/tfui_example_en en
 ```
-
-Les règles de mise en page suivies sont celles vérifiées en jeu (PLAN.md §1.4) : gravity posée sur les lignes qui contiennent des éléments étirés par le jeu (ProgressBar, Slider, DoubleSpinBox), taille d’image par le style `size`, layouts enveloppés dans un Component là où le moteur les refuse.
