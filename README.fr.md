@@ -6,6 +6,8 @@
 
 **Concevez visuellement les fenêtres de vos mods Transport Fever 3, voyez-les sans lancer le jeu, et obtenez un Lua propre et conforme aux règles du jeu.**
 
+<a href="https://github.com/Spit8/TFUI/releases/latest"><img src="https://img.shields.io/github/v/release/Spit8/TFUI?label=derni%C3%A8re%20version&sort=semver" alt="Dernière version" /></a>
+
 <a href="README.md"><img src="https://flagcdn.com/48x36/gb.png" width="32" height="24" alt="English" title="English" /> English</a> &nbsp;·&nbsp; <img src="https://flagcdn.com/48x36/fr.png" width="32" height="24" alt="Français" title="Français" /> **Français**
 
 ### 🌐 Disponible en 6 langues
@@ -33,6 +35,7 @@ Vous pouvez vous-même ajouter une langue ou corriger une traduction, directemen
 
 - [Pourquoi TFUI ?](#pourquoi-tfui-)
 - [Ce que vous pouvez en faire](#ce-que-vous-pouvez-en-faire)
+- [Téléchargement](#téléchargement)
 - [Installation](#installation)
 - [La liaison au jeu : ce qui est lu, et pourquoi](#la-liaison-au-jeu--ce-qui-est-lu-et-pourquoi)
 - [Versionnez votre mod](#versionnez-votre-mod)
@@ -40,6 +43,7 @@ Vous pouvez vous-même ajouter une langue ou corriger une traduction, directemen
 - [Mod d’exemple](#mod-dexemple)
 - [Contribuer](#contribuer)
 - [Développement](#développement)
+- [Licence](#licence)
 - [Avertissement](#avertissement)
 
 ---
@@ -74,9 +78,22 @@ TFUI est né parce que je me suis heurté à ces deux murs : j’ai d’abord es
 </tr>
 </table>
 
+## Téléchargement
+
+Récupérez la dernière version sur la **[page des releases](https://github.com/Spit8/TFUI/releases/latest)**. Chaque release contient :
+
+| Fichier | Ce que c’est |
+|---|---|
+| `TFUI_X.Y.Z_x64-setup.exe` | Installeur (**recommandé**) |
+| `TFUI_X.Y.Z_x64.msi` | Installeur MSI, pour une installation gérée ou scriptée |
+| `TFUI_X.Y.Z_x64_portable.zip` | Version portable : `tfui.exe`, rien à installer (nécessite [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/), déjà présent sous Windows 10/11) |
+| `TFUI_X.Y.Z_sources.zip` | Code source de cette version, pour la construire vous-même (voir plus bas) |
+
+`SHA256SUMS.txt` donne les sommes de contrôle de ces fichiers. TFUI fonctionne sous **Windows** et demande **Transport Fever 3** installé : il lit les fichiers du jeu (voir [La liaison au jeu](#la-liaison-au-jeu--ce-qui-est-lu-et-pourquoi)).
+
 ## Installation
 
-TFUI est une application de bureau pour **Windows**, construite avec [Tauri 2](https://tauri.app/) (Rust) et React. Il n’y a pas encore d’installeur : on la construit depuis les sources.
+TFUI est une application de bureau pour **Windows**, construite avec [Tauri 2](https://tauri.app/) (Rust) et React. Le plus simple est l’installeur de la section [Téléchargement](#téléchargement) ; cette section explique comment la construire depuis les sources.
 
 ### Prérequis
 
