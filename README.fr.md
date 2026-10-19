@@ -7,6 +7,7 @@
 **Concevez visuellement les fenêtres de vos mods Transport Fever 3, voyez-les sans lancer le jeu, et obtenez un Lua propre et conforme aux règles du jeu.**
 
 <a href="https://github.com/Spit8/TFUI/releases/latest"><img src="https://img.shields.io/github/v/release/Spit8/TFUI?label=derni%C3%A8re%20version&sort=semver" alt="Dernière version" /></a>
+<a href="https://mod.io/g/transportfever3/r/simply-design-tf3-mdos-ui-using-tfui-design-tool"><img src="https://img.shields.io/badge/guide-mod.io-0b7fab" alt="Guide sur mod.io" /></a>
 
 <a href="README.md"><img src="https://flagcdn.com/48x36/gb.png" width="32" height="24" alt="English" title="English" /> English</a> &nbsp;·&nbsp; <img src="https://flagcdn.com/48x36/fr.png" width="32" height="24" alt="Français" title="Français" /> **Français**
 
@@ -80,7 +81,9 @@ TFUI est né parce que je me suis heurté à ces deux murs : j’ai d’abord es
 
 ## Téléchargement
 
-Récupérez la dernière version sur la **[page des releases](https://github.com/Spit8/TFUI/releases/latest)**. Chaque release contient :
+Récupérez la dernière version sur la **[page des releases](https://github.com/Spit8/TFUI/releases/latest)**. Vous découvrez TFUI ? Le **[guide pas à pas sur mod.io](https://mod.io/g/transportfever3/r/simply-design-tf3-mdos-ui-using-tfui-design-tool)** (en anglais) vous accompagne jusqu’à votre première fenêtre.
+
+Chaque release contient :
 
 | Fichier | Ce que c’est |
 |---|---|
