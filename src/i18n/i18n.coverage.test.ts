@@ -3,8 +3,13 @@ import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import fr from "./locales/fr.json";
+import de from "./locales/de.json";
+import en from "./locales/en.json";
+import es from "./locales/es.json";
+import it_ from "./locales/it.json";
+import zh from "./locales/zh.json";
 import { flattenMessages } from "./format";
-import { compareLocale, hardcodedFrench, placeholders, unusedKeys } from "./keyAudit";
+import { compareLocale, hardcodedFrench, placeholders, pluralSyntaxErrors, qualityIssues, unusedKeys } from "./keyAudit";
 
 const SRC = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -23,6 +28,37 @@ const base = flattenMessages(fr);
 describe("traductions", () => {
   it("paramètres : {nom} et pluriels reconnus", () => {
     expect(placeholders("{a} et {n, plural, one {# {b}} other {# x}}")).toEqual(["a", "b", "n"]);
+  });
+
+  it("le corps d’une branche de pluriel n’est pas un paramètre", () => {
+    expect(placeholders("{n, plural, one {rule} other {# rules}}")).toEqual(["n"]);
+  });
+
+  it("pluriels cassés détectés", () => {
+    expect(pluralSyntaxErrors("{n, plural, one {# a} other {# b}}")).toEqual([]);
+    expect(pluralSyntaxErrors("{n, plural, other {# 个}}")).toEqual([]);
+    expect(pluralSyntaxErrors("{n, singular, one {a} other {b}}")).toHaveLength(1);
+    expect(pluralSyntaxErrors("{n, plural, one {# otro} otros {# otros}}").length).toBeGreaterThan(0);
+  });
+
+  it("défauts de qualité : repères, lignes en trop, texte parasite, resté en français", () => {
+    const base = { s: "État : [state]", l: "Quitter", j: "texte", f: "Aucune note pour ce composant." };
+    const kinds = qualityIssues(
+      base,
+      { s: "Estado: [estado]", l: "Salir\nAbandonar", j: "**texto** (dependiendo del contexto)", f: base.f },
+      "es",
+    ).map((q) => `${q.key}:${q.kind}`);
+    expect(kinds).toEqual(["s:tokens", "l:extraLines", "j:junk", "f:untranslated"]);
+  });
+
+  it("langues intégrées sans défaut bloquant", () => {
+    const locales = { de, en, es, it: it_, zh };
+    const found = Object.entries(locales).flatMap(([lang, tree]) =>
+      qualityIssues(base, flattenMessages(tree), lang)
+        .filter((q) => q.kind !== "tooLong")
+        .map((q) => `${lang} ${q.key} ${q.kind} ${q.detail}`),
+    );
+    expect(found).toEqual([]);
   });
 
   it("une langue est comparée à la base (manquantes, en trop, paramètres)", () => {

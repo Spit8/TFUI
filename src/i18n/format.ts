@@ -34,7 +34,11 @@ function pluralCategory(n: number, lang: string): string {
   }
 }
 
-function formatPlural(body: string, n: number, lang: string, params: MessageParams): string {
+/**
+ * Branches d’un pluriel (`one {…} other {…}`) ; `rest` = texte restant non
+ * analysé (mot-clé inconnu, accolade manquante…) : vide si la syntaxe est bonne.
+ */
+export function parsePluralBody(body: string): { options: Map<string, string>; rest: string } {
   const options = new Map<string, string>();
   let i = 0;
   while (i < body.length) {
@@ -46,6 +50,11 @@ function formatPlural(body: string, n: number, lang: string, params: MessagePara
     options.set(m[1]!, body.slice(open + 1, close));
     i = close + 1;
   }
+  return { options, rest: body.slice(i) };
+}
+
+function formatPlural(body: string, n: number, lang: string, params: MessageParams): string {
+  const { options } = parsePluralBody(body);
   const chosen =
     options.get(`=${n}`) ?? options.get(pluralCategory(n, lang)) ?? options.get("other") ?? "";
   return formatMessage(chosen.replace(/#/g, formatNumber(n, lang)), params, lang);
