@@ -1,4 +1,4 @@
-import { insertSlotFor } from "./slots";
+import { primaryInsertSlot } from "./slots";
 import { canDrop, canPlaceType } from "./treeOps";
 import type { TfuiProject, UiNode } from "./types";
 import { t } from "../i18n";
@@ -101,7 +101,7 @@ export function checkDrop(project: TfuiProject, drag: DragSource, targetId: stri
   let slot: string;
   let index: number;
   if (kind === "into") {
-    const s = insertSlotFor(target.node);
+    const s = primaryInsertSlot(target.node.type);
     if (!s) return { ok: false, reason: t("ops.noChildAccepted", { type: target.node.type }) };
     parent = target.node;
     slot = s;

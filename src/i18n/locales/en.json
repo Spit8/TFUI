@@ -304,7 +304,8 @@
     "rootNoSiblingsDrop": "The root of the screen cannot have any siblings.",
     "cannotDeleteLastScreen": "It is impossible to delete the last screen.",
     "orphanChildren": "{type} has no catalog slot — {n, plural, one {# orphan child removed} other {# orphan children removed}} from “{slot}”.",
-    "notBesideRoot": "It's impossible to place it next to the root."
+    "notBesideRoot": "It's impossible to place it next to the root.",
+    "slotLocked": "{parent}.{slot} does not accept drops: set the tab title in the inspector."
   },
   "styleState": {
     "normal": "Normal",
@@ -341,7 +342,7 @@
     "initial_xy_range": "{key} must be within the range of [0, 1] (received {value}).",
     "css_rule_unscoped": "CSS rule \"{selector}\" without a class or R:: selector – it will affect all elements of this type throughout the entire game.",
     "style_key_not_allowed": "Style propert(y/ies) {keys} on {target}: not expected for {elements} (neither seen in vanilla nor part of the common base).",
-    "tab_without_title": "Tab without a title: its indicator is empty, so the tab header will be blank in game. Drop a TextView into the tab (it goes to indicator once the content is filled)."
+    "tab_without_title": "Tab without a title: its header will be blank in game. Fill in “Tab title” in the inspector."
   },
   "cascade": {
     "idNotSimulated": "Identifier #: ... not simulated",
@@ -414,7 +415,10 @@
     "initialValue": "Initial value",
     "addUseState": "Add useState",
     "notes": "Notes",
-    "noNotes": "No notes for this component."
+    "noNotes": "No notes for this component.",
+    "tabTitle": "Tab title",
+    "tabTitleHint": "Text of the tab header (TextView in its indicator, created if needed)",
+    "tabTitleDynamic": "Title set by a state or Lua: edit its TextView in the tree."
   },
   "loading": {
     "messages": "Alignment of tracks...\nImproving profitability...\nInstallation of a train station...\nOptimizing connections...\nNegotiations with the mayor...\nLubricating the switch points...\nRecruiting tram drivers...\nCalculating traffic congestion in the city center...\nReplacing steam locomotives...\nInstalling the overhead catenary system...\nAdjusting peak hour schedules...\nCompensating nearby residents...\nExcavating a tunnel under the hill...\nDelivering coal to the steel mill...\nRepainting the buses...\nNegotiating landing rights...\nCollecting lost passengers...\nBalancing the budget of the unprofitable line...\nReplacing the aging fleet...\nConstruction of a suspension bridge...\nDocking a cargo ship...\nBypassing the historic city center"

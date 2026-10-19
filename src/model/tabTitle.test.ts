@@ -1,7 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { createEmptyProject, createNode, createStarterNode } from "./factory";
 import { inlineEditTarget } from "./inlineEdit";
-import { insertSlotFor } from "./slots";
+import { primaryInsertSlot } from "./slots";
+import { setTabTitle, tabTitleText } from "./tabTitle";
+import { canPlaceType } from "./treeOps";
 import { validateProject } from "./validate";
 
 describe("titre d’un onglet (TabWidgetChild.indicator)", () => {
@@ -13,16 +15,29 @@ describe("titre d’un onglet (TabWidgetChild.indicator)", () => {
     expect(title?.props.text).toMatchObject({ kind: "literal" });
   });
 
-  it("déposé dans l’onglet : le contenu d’abord, puis le titre s’il est libre", () => {
+  it("on ne dépose dans un onglet que dans son contenu, jamais dans son titre", () => {
     const tab = createNode("TabWidgetChild");
-    expect(insertSlotFor(tab)).toBe("item");
-    tab.slots.item = [createNode("TextView")];
-    expect(insertSlotFor(tab)).toBe("indicator");
-    tab.slots.indicator = [createNode("TextView")];
-    // Tout est pris : slot principal, le refus « déjà occupé » est expliqué ailleurs.
-    expect(insertSlotFor(tab)).toBe("item");
-    // Les autres types ne changent pas de comportement.
-    expect(insertSlotFor(createNode("BoxLayout"))).toBe("children");
+    expect(primaryInsertSlot("TabWidgetChild")).toBe("item");
+    expect(canPlaceType("TabWidgetChild", "item", "TextView", tab.slots).ok).toBe(true);
+    expect(canPlaceType("TabWidgetChild", "indicator", "TextView", tab.slots).ok).toBe(false);
+  });
+
+  it("le titre se règle depuis l’inspecteur : modifié, ou créé s’il manque", () => {
+    const project = createEmptyProject();
+    const root = project.screens[0]!.root;
+    const tabs = createNode("TabWidget");
+    const bare = createNode("TabWidgetChild");
+    const titled = createStarterNode("TabWidgetChild").node;
+    tabs.slots.tabs = [bare, titled];
+    root.slots.content = [tabs];
+
+    const p1 = setTabTitle(project, bare.id, "Réglages");
+    const created = p1.screens[0]!.root.slots.content![0]!.slots.tabs![0]!;
+    expect(tabTitleText(created)).toBe("Réglages");
+    expect(created.slots.indicator![0]!.meta.class).toEqual(["font-scale-tab-widget-indicator"]);
+
+    const p2 = setTabTitle(p1, titled.id, "Lignes");
+    expect(tabTitleText(p2.screens[0]!.root.slots.content![0]!.slots.tabs![1]!)).toBe("Lignes");
   });
 
   it("double-clic sur l’onglet : édite le texte de son titre", () => {

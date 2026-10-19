@@ -5,6 +5,7 @@ import { getClipboardNode, setClipboardNode } from "./clipboard";
 import {
   isMultiSlot,
   PARENT_CHILD_RULES,
+  isLockedSlot,
   primaryInsertSlot,
   violatesSlotLayoutRule,
 } from "./slots";
@@ -112,6 +113,10 @@ export function canPlaceType(
       ok: false,
       reason: t("ops.mustBeUnder", { type: nodeType, parent: requiredParent }),
     };
+  }
+
+  if (isLockedSlot(parentType, slot)) {
+    return { ok: false, reason: t("ops.slotLocked", { parent: parentType, slot }) };
   }
 
   const layoutRule = violatesSlotLayoutRule(parentType, slot, nodeType);

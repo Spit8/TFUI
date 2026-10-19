@@ -304,7 +304,8 @@
     "rootNoSiblingsDrop": "La racine de l’écran ne peut pas avoir de frères.",
     "cannotDeleteLastScreen": "Impossible de supprimer le dernier écran.",
     "orphanChildren": "{type} n’a pas de slot catalogue — {n, plural, one {# enfant orphelin retiré} other {# enfants orphelins retirés}} de « {slot} ».",
-    "notBesideRoot": "Impossible à côté de la racine."
+    "notBesideRoot": "Impossible à côté de la racine.",
+    "slotLocked": "{parent}.{slot} n’accepte pas de dépôt : réglez le titre de l’onglet dans l’inspecteur."
   },
   "styleState": {
     "normal": "Normal",
@@ -341,7 +342,7 @@
     "initial_xy_range": "{key} doit être dans [0, 1] (reçu {value}).",
     "css_rule_unscoped": "Règle CSS « {selector} » sans classe ni R:: — elle touchera tous les éléments de ce type dans tout le jeu.",
     "style_key_not_allowed": "Propriété(s) de style {keys} sur {target} : non prévue(s) pour {elements} (ni vue(s) en vanilla, ni du socle commun).",
-    "tab_without_title": "Onglet sans titre : son indicator est vide, l’en-tête sera vide en jeu. Déposez une TextView dans l’onglet (elle va dans indicator si le contenu est déjà pris)."
+    "tab_without_title": "Onglet sans titre : son en-tête sera vide en jeu. Renseignez « Titre de l’onglet » dans l’inspecteur."
   },
   "cascade": {
     "idNotSimulated": "identifiant #… non simulé",
@@ -414,7 +415,10 @@
     "initialValue": "valeur initiale",
     "addUseState": "Ajouter useState",
     "notes": "Notes",
-    "noNotes": "Aucune note pour ce composant."
+    "noNotes": "Aucune note pour ce composant.",
+    "tabTitle": "Titre de l’onglet",
+    "tabTitleHint": "Texte de l’en-tête de l’onglet (TextView de son indicator, créée si besoin)",
+    "tabTitleDynamic": "Titre défini par un état ou du Lua : modifiez sa TextView dans l’arbre."
   },
   "loading": {
     "messages": "Alignement des arrêts…\nAmélioration de la rentabilité…\nInstallation d’une gare…\nOptimisation des correspondances…\nNégociation avec le maire…\nGraissage des aiguillages…\nRecrutement de conducteurs de tram…\nCalcul des bouchons du centre-ville…\nRemplacement des locomotives à vapeur…\nPose des caténaires…\nAjustement des horaires de pointe…\nDédommagement des riverains…\nCreusement d’un tunnel sous la colline…\nLivraison du charbon à l’aciérie…\nRepeinture des autobus…\nNégociation des droits d’atterrissage…\nRamassage des passagers égarés…\nÉquilibrage de la ligne déficitaire…\nRenouvellement de la flotte vieillissante…\nConstruction d’un pont suspendu…\nMise à quai d’un cargo…\nContournement du centre historique…"

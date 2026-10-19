@@ -304,7 +304,8 @@
     "rootNoSiblingsDrop": "La raíz del elemento de pantalla no puede tener elementos hermanos.",
     "cannotDeleteLastScreen": "Imposible eliminar la última pantalla.",
     "orphanChildren": "{type} no tiene slot en el catálogo — {n, plural, one {# hijo huérfano retirado} other {# hijos huérfanos retirados}} de «{slot}».",
-    "notBesideRoot": "Imposible de colocarlo al lado de la raíz."
+    "notBesideRoot": "Imposible de colocarlo al lado de la raíz.",
+    "slotLocked": "{parent}.{slot} no admite soltar elementos: define el título de la pestaña en el inspector."
   },
   "styleState": {
     "normal": "Normal",
@@ -341,7 +342,7 @@
     "initial_xy_range": "{key} debe estar en el rango [0, 1] (valor recibido: {value}).",
     "css_rule_unscoped": "Regla CSS \"{selector}\" sin clase ni R:: — afectará a todos los elementos de este tipo en todo el juego.",
     "style_key_not_allowed": "Propiedad(es) de estilo {keys} en {target}: no prevista(s) para {elements} (ni vista(s) en vanilla ni de la base común).",
-    "tab_without_title": "Pestaña sin título: su indicator está vacío y la cabecera aparecerá vacía en el juego. Suelta una TextView en la pestaña (va a indicator si el contenido ya está ocupado)."
+    "tab_without_title": "Pestaña sin título: su cabecera aparecerá vacía en el juego. Rellena «Título de la pestaña» en el inspector."
   },
   "cascade": {
     "idNotSimulated": "Identificador: #… No simulado",
@@ -414,7 +415,10 @@
     "initialValue": "valor inicial",
     "addUseState": "Añadir useState",
     "notes": "Notas",
-    "noNotes": "No hay notas para este componente."
+    "noNotes": "No hay notas para este componente.",
+    "tabTitle": "Título de la pestaña",
+    "tabTitleHint": "Texto de la cabecera de la pestaña (TextView de su indicator, creada si hace falta)",
+    "tabTitleDynamic": "Título definido por un estado o Lua: edita su TextView en el árbol."
   },
   "loading": {
     "messages": "Alineación de los desvíos...\nMejora de la rentabilidad...\nInstalación de una estación...\nOptimización de las conexiones...\nNegociación con el alcalde...\nLubricación de los puntos de cruce...\nContratación de conductores de tranvía...\nCálculo de los atascos en el centro de la ciudad...\nReemplazo de las locomotoras de vapor...\nInstalación de los cables aéreos (catámares)...\nAjuste de los horarios pico...\nCompensación a los vecinos...\nExcavación de un túnel bajo la colina...\nEntrega de carbón a la fábrica de acero...\nRepintado de los autobuses...\nNegociación de los derechos de aterrizaje...\nRecogida de pasajeros extraviados...\nEquilibrio de la línea con pérdidas...\nRenovación de la flota envejecida...\nConstrucción de un puente colgante...\nAtracadero de un carguero...\nDesvío del centro histórico"

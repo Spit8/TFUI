@@ -304,7 +304,8 @@
     "rootNoSiblingsDrop": "屏幕的根元素不能有子元素。",
     "cannotDeleteLastScreen": "无法删除最后一个界面。",
     "orphanChildren": "{type} 没有目录 slot — 已从“{slot}”移除{n, plural, other { # 个孤立子元素}}。",
-    "notBesideRoot": "无法放置在根目录旁边。"
+    "notBesideRoot": "无法放置在根目录旁边。",
+    "slotLocked": "{parent}.{slot} 不接受拖放：请在检查器中设置标签页标题。"
   },
   "styleState": {
     "normal": "正常",
@@ -341,7 +342,7 @@
     "initial_xy_range": "{key} 的值必须在 [0, 1] 范围内（已接收到 {value}）。",
     "css_rule_unscoped": "CSS 规则 \"{selector}\" 不使用类或伪类 — 它将影响所有此类元素，在整个游戏中。",
     "style_key_not_allowed": "{target} 上的样式属性 {keys}：不适用于 {elements}（原版中未使用，也不属于通用基础属性）。",
-    "tab_without_title": "标签页没有标题：其 indicator 为空，游戏中标签头将为空白。将一个 TextView 拖入该标签页（内容已占用时它会放入 indicator）。"
+    "tab_without_title": "标签页没有标题：游戏中标签头将为空白。请在检查器中填写“标签页标题”。"
   },
   "cascade": {
     "idNotSimulated": "标识符 #… 未模拟",
@@ -414,7 +415,10 @@
     "initialValue": "初始值",
     "addUseState": "添加 useState",
     "notes": "备注",
-    "noNotes": "此组件没有备注。"
+    "noNotes": "此组件没有备注。",
+    "tabTitle": "标签页标题",
+    "tabTitleHint": "标签页头的文本（其 indicator 中的 TextView，需要时自动创建）",
+    "tabTitleDynamic": "标题由状态或 Lua 定义：请在树中编辑其 TextView。"
   },
   "loading": {
     "messages": "对齐站点…\n提高盈利能力…\n建设火车站…\n优化换乘…\n与市长谈判…\n润滑道岔…\n招聘有轨电车司机…\n计算市中心拥堵情况…\n更换蒸汽机车…\n安装接触网…\n调整高峰时段时刻表…\n赔偿周边居民…\n挖掘穿过山丘的隧道…\n向钢铁厂运送煤炭…\n重新粉刷公交车…\n协商起降费用…\n接送迷路乘客…\n平衡亏损线路…\n更新老旧机车组…\n建造悬索桥…\n停靠货轮…\n绕过历史中心区域…"

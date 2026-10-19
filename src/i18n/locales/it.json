@@ -304,7 +304,8 @@
     "rootNoSiblingsDrop": "La radice dell'elemento schermo non può avere elementi fratelli.",
     "cannotDeleteLastScreen": "Impossibile eliminare l'ultima schermata.",
     "orphanChildren": "{type} non ha uno slot di catalogo — {n, plural, one {# figlio orfano rimosso} other {# figli orfani rimossi}} da «{slot}».",
-    "notBesideRoot": "Impossibile posizionarlo vicino alla radice."
+    "notBesideRoot": "Impossibile posizionarlo vicino alla radice.",
+    "slotLocked": "{parent}.{slot} non accetta elementi: imposta il titolo della scheda nell’ispettore."
   },
   "styleState": {
     "normal": "Normale",
@@ -341,7 +342,7 @@
     "initial_xy_range": "{key} deve essere compreso tra [0, 1] (valore ricevuto: {value}).",
     "css_rule_unscoped": "Regola CSS \"{selector}\" senza classe né R:: – influenzerà tutti gli elementi di questo tipo in tutto il progetto.",
     "style_key_not_allowed": "Proprietà di stile {keys} su {target}: non previste per {elements} (né viste nel vanilla né della base comune).",
-    "tab_without_title": "Scheda senza titolo: il suo indicator è vuoto, l’intestazione sarà vuota nel gioco. Trascina una TextView nella scheda (va in indicator se il contenuto è già occupato)."
+    "tab_without_title": "Scheda senza titolo: l’intestazione sarà vuota nel gioco. Compila «Titolo della scheda» nell’ispettore."
   },
   "cascade": {
     "idNotSimulated": "identificativo #… non simulato",
@@ -414,7 +415,10 @@
     "initialValue": "valore iniziale",
     "addUseState": "Aggiungere useState",
     "notes": "Note",
-    "noNotes": "Nessuna nota per questo componente."
+    "noNotes": "Nessuna nota per questo componente.",
+    "tabTitle": "Titolo della scheda",
+    "tabTitleHint": "Testo dell’intestazione della scheda (TextView del suo indicator, creata se serve)",
+    "tabTitleDynamic": "Titolo definito da uno stato o da Lua: modifica la sua TextView nell’albero."
   },
   "loading": {
     "messages": "Allineamento dei deviatoi...\nMiglioramento della redditività...\nInstallazione di una stazione...\nOttimizzazione delle coincidenze...\nNegoziazione con il sindaco...\nLubrificazione dei deviatoi...\nAssunzione di conducenti di tram...\nCalcolo della congestione nel centro città...\nSostituzione delle locomotive a vapore...\nInstallazione delle linee aeree di contatto...\nAggiustamento degli orari di punta...\nRisarcimento dei residenti...\nScavo di un tunnel sotto la collina...\nConsegna del carbone all'acciaieria...\nRifacimento della vernice degli autobus...\nNegoziazione dei diritti di atterraggio...\nRaccolta dei passeggeri smarriti...\nRisanamento di una linea in perdita...\nRinnovamento della flotta obsoleta...\nCostruzione di un ponte sospeso...\nOrdinazione di una nave cargo...\nDeviazione dal centro storico"

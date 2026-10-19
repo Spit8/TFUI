@@ -22,6 +22,7 @@ import { NumberInput } from "../../ui/NumberInput";
 import "./InspectorPanel.css";
 import { t, useT } from "../../i18n";
 import { componentNotes } from "../../catalog/overrides";
+import { tabTitleText } from "../../model/tabTitle";
 
 /** `!secondary` (forme sélecteur) → `secondary` (forme `meta.class`). */
 function stripClassPrefix(name: string): string {
@@ -39,6 +40,7 @@ export function InspectorPanel() {
   const setProp = useProjectStore((s) => s.setProp);
   const unsetProp = useProjectStore((s) => s.unsetProp);
   const setMeta = useProjectStore((s) => s.setMeta);
+  const setTabTitle = useProjectStore((s) => s.setTabTitle);
   const addStateVar = useProjectStore((s) => s.addStateVar);
   const updateStateVar = useProjectStore((s) => s.updateStateVar);
   const removeStateVar = useProjectStore((s) => s.removeStateVar);
@@ -222,6 +224,8 @@ export function InspectorPanel() {
   const classes = node.meta.class ?? [];
   // Racine d’un écran fenêtre (RegisterWrapperRecipe) : meta limité à `class`.
   const isWindowRoot = !!screen && screen.kind === "window" && screen.root.id === node.id;
+  // Titre d’un onglet : texte de la TextView de son indicator (null : état ou Lua).
+  const tabTitle = node.type === "TabWidgetChild" ? tabTitleText(node) : "";
   const rootWrapKeys = isWindowRoot ? wrappingMetaKeys(node) : [];
   const displayName = node.name && node.name !== node.type ? node.name : "";
 
@@ -389,6 +393,20 @@ export function InspectorPanel() {
                 </button>
               ) : null}
             </div>
+          ) : null}
+          {node.type === "TabWidgetChild" ? (
+            tabTitle === null ? (
+              <div className="insp-window-root-note">{t("insp.tabTitleDynamic")}</div>
+            ) : (
+              <label className="insp-field" title={t("insp.tabTitleHint")}>
+                <span>{t("insp.tabTitle")}</span>
+                <input
+                  type="text"
+                  value={tabTitle}
+                  onChange={(e) => setTabTitle(node.id, e.target.value)}
+                />
+              </label>
+            )
           ) : null}
           {isWindowRoot ? null : (
             <div

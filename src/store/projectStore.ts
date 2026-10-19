@@ -9,6 +9,7 @@ import {
   type StyleState,
 } from "../model/elementStyle";
 import { createEmptyProject, createNode, createStarterNode, nextChildValue, VALUED_CHILD_TYPES } from "../model/factory";
+import { setTabTitle as setTabTitleOp } from "../model/tabTitle";
 import { tfuiProjectSchema } from "../model/schema";
 import {
   addScreen as addScreenOp,
@@ -16,7 +17,7 @@ import {
   removeScreen as removeScreenOp,
   updateScreenMeta as updateScreenMetaOp,
 } from "../model/screenOps";
-import { insertSlotFor, migrateProjectSlots, violatesSlotLayoutRule } from "../model/slots";
+import { migrateProjectSlots, primaryInsertSlot, violatesSlotLayoutRule } from "../model/slots";
 import {
   canDrop,
   canPlaceType,
@@ -178,6 +179,8 @@ interface ProjectState {
   toggleNodeHidden: (nodeId: string) => void;
   toggleNodeLocked: (nodeId: string) => void;
   setProp: (nodeId: string, key: string, value: PropValue) => void;
+  /** Titre d’un onglet (TextView de son indicator, créée si besoin). */
+  setTabTitle: (tabId: string, text: string) => void;
   unsetProp: (nodeId: string, key: string) => void;
   setMeta: (nodeId: string, meta: Partial<UiNodeMeta>) => void;
   setModInfo: (patch: {
@@ -579,7 +582,7 @@ export const useProjectStore = create<ProjectState>()(
       if (!screen) return false;
       const parent = getNodeById(screen.root, parentId);
       if (!parent) return false;
-      const targetSlot = slot ?? insertSlotFor(parent);
+      const targetSlot = slot ?? primaryInsertSlot(parent.type);
       if (!targetSlot) {
         set((s) => {
           s.lastDropError = t("store.noChildSlot", { type: parent.type });
@@ -774,6 +777,14 @@ export const useProjectStore = create<ProjectState>()(
         coalesceKey: `${nodeId}:${key}`,
         at: Date.now(),
       });
+    },
+
+    setTabTitle: (tabId, text) => {
+      const { project } = get();
+      if (!project) return;
+      const next = setTabTitleOp(project, tabId, text);
+      if (next === project) return;
+      commitProject(set, get, next, { coalesceKey: `${tabId}:tabTitle`, at: Date.now() });
     },
 
     unsetProp: (nodeId, key) => {
