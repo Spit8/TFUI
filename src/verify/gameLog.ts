@@ -46,6 +46,15 @@ export function gameLogIssues(
   const needles = [opts.modId, ...opts.recipeNames, "react.lua", "/gui/"].filter(Boolean);
   const relevant = (e: GameLogEntry) => {
     const all = `${e.message}\n${e.details.join("\n")}`;
+    // Pile qui cite d’autres mods (`<mod>::/…`, `staging_area/<mod>/…`) mais
+    // jamais celui-ci : l’erreur vient d’eux, même si elle passe par
+    // react.lua (ex. un script de simulation qui charge builtin.lua :
+    // « Missing builtin recipeId for WithComponentParams », 2026-10-19).
+    const mods = new Set(
+      [...all.matchAll(/(?:^|[\s(/])([A-Za-z0-9_-]+)::\//g), ...all.matchAll(/staging_area\/([A-Za-z0-9_-]+)\//g)]
+        .map((m) => m[1]!),
+    );
+    if (mods.size > 0 && !mods.has(opts.modId)) return false;
     return needles.some((n) => all.includes(n));
   };
   const issues: GameLogIssue[] = [];

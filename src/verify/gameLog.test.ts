@@ -38,4 +38,26 @@ describe("journal du jeu", () => {
     expect(text).not.toMatch(/Some other mod/);
     expect(issues.filter((i) => /Wrapper recipe/.test(i.message))).toHaveLength(1);
   });
+
+  it("ignore une erreur du runtime React causée par un autre mod", () => {
+    // Forme relevée dans un journal réel (2026-10-19) : un script de
+    // simulation d’un autre mod charge builtin.lua, donc react.lua.
+    const log = `[2026-10-19 10:53:56Z - ERROR    - Simulation Threa - Main           ]+ Missing builtin recipeId for
+    | DetailMessage: name = WithComponentParams
+    | Stacktrace:
+    |     ::/gui/main/react.lua(433): DeclareBuiltinLayoutChildWithUserdata
+    |     ::/gui/main/builtin.lua(2): chunk
+    |     other_mod::/scripts/analysis.lua(559): ?
+    +     C:/Steam/local/staging_area/other_mod/content/main.script.lua(119): ?
+[2026-10-19 10:54:10Z - ERROR    - Main Thread      - Main           ]+ Wrapper recipe must return child
+    | DetailMessage: expectedRecipeId=39, expectedName=Window
+    |     ::/gui/main/react.lua(282): ?
+    +     demo_mod::/gui/main_gui.script.lua(12): ?
+`;
+    const text = gameLogIssues(parseGameLog(log), { modId: "demo_mod", recipeNames: ["DemoWindow"] })
+      .map((i) => i.message)
+      .join(" | ");
+    expect(text).not.toMatch(/Missing builtin recipeId/);
+    expect(text).toMatch(/Wrapper recipe must return child/);
+  });
 });
