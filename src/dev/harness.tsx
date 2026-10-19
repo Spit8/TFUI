@@ -13,7 +13,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import glueWasmUrl from "wasmoon/dist/glue.wasm?url";
 import { setActiveCatalog } from "../catalog/activeCatalog";
-import catalogJson from "../catalog/catalog.generated.json";
 import { CatalogProvider } from "../catalog/CatalogContext";
 import { buildManualHelperComponents } from "../catalog/overrides";
 import { mergeHelperComponents } from "../catalog/parseTealDefs";
@@ -33,6 +32,12 @@ import type { PreviewFontScale } from "../settings/defaults";
 import { setPreviewFontScaleState, setShowBoxes } from "../store/previewCameraStore";
 
 const params = new URLSearchParams(location.search);
+/**
+ * Catalogue extrait de l’install du jeu (`pnpm extract-catalog`), gitignoré :
+ * chargé par glob pour qu’un clone sans ce fichier compile quand même (le glob
+ * est alors vide et le banc signale l’absence au démarrage).
+ */
+const catalogFiles = import.meta.glob<Catalog>("../catalog/catalog.generated.json", { import: "default" });
 const MARGIN = 48;
 
 async function readBytes(zip: string, entry: string): Promise<Uint8Array | null> {
@@ -95,7 +100,9 @@ async function boot(): Promise<void> {
   const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
   const path = params.get("project") ?? "";
   const project = (await (await fetch(`/__tfui-dev/project?path=${encodeURIComponent(path)}`)).json()) as TfuiProject;
-  const catalog = mergeHelperComponents(catalogJson as unknown as Catalog, buildManualHelperComponents());
+  const loadCatalog = catalogFiles["../catalog/catalog.generated.json"];
+  if (!loadCatalog) throw new Error("catalog.generated.json absent : lancer pnpm extract-catalog");
+  const catalog = mergeHelperComponents(await loadCatalog(), buildManualHelperComponents());
   setActiveCatalog(catalog);
   const styles = await extractBaseStyles(async (zip, entry) => {
     const b = await readBytes(zip, entry);
