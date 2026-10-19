@@ -6,9 +6,22 @@
 
 **Concevez visuellement les fenêtres de vos mods Transport Fever 3, voyez-les sans lancer le jeu, et obtenez un Lua propre et conforme aux règles du jeu.**
 
-[English](README.md) · Français
+<a href="README.md"><img src="https://flagcdn.com/48x36/gb.png" width="32" height="24" alt="English" title="English" /> English</a> &nbsp;·&nbsp; <img src="https://flagcdn.com/48x36/fr.png" width="32" height="24" alt="Français" title="Français" /> **Français**
 
-L’éditeur est disponible en **français, anglais, espagnol, italien, allemand et chinois simplifié**, et vous pouvez vous-même ajouter ou corriger une langue.
+### 🌐 Disponible en 6 langues
+
+<table>
+<tr>
+<td align="center"><img src="https://flagcdn.com/48x36/fr.png" width="32" height="24" alt="Français" title="Français" /><br /><sub><b>Français</b></sub></td>
+<td align="center"><img src="https://flagcdn.com/48x36/gb.png" width="32" height="24" alt="English" title="English" /><br /><sub><b>English</b></sub></td>
+<td align="center"><img src="https://flagcdn.com/48x36/es.png" width="32" height="24" alt="Español" title="Español" /><br /><sub><b>Español</b></sub></td>
+<td align="center"><img src="https://flagcdn.com/48x36/it.png" width="32" height="24" alt="Italiano" title="Italiano" /><br /><sub><b>Italiano</b></sub></td>
+<td align="center"><img src="https://flagcdn.com/48x36/de.png" width="32" height="24" alt="Deutsch" title="Deutsch" /><br /><sub><b>Deutsch</b></sub></td>
+<td align="center"><img src="https://flagcdn.com/48x36/cn.png" width="32" height="24" alt="简体中文" title="简体中文" /><br /><sub><b>简体中文</b></sub></td>
+</tr>
+</table>
+
+Vous pouvez vous-même ajouter une langue ou corriger une traduction, directement depuis l’application.
 
 <img src="demo/main_frame.png" alt="Fenêtre principale de TFUI : arbre, palette, aperçu, inspecteur et problèmes" width="100%" />
 
