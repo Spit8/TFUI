@@ -230,6 +230,14 @@ npx tsc --noEmit
 - No game file is ever committed: `fixtures/` only contains links to your installation and is ignored by Git.
 - Every visible text goes through `src/i18n/locales/*.json`.
 
+## License
+
+Copyright (C) 2026 Wilfried Lambert
+
+TFUI is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+TFUI is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more details.
+
 ## Disclaimer
 
 TFUI is an independent community project. It is not affiliated with, endorsed or supported by Urban Games or the publishers of Transport Fever 3. *Transport Fever* is a trademark of its respective owners. TFUI does not contain or redistribute any game file: it reads them from your own installation.

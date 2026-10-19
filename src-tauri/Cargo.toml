@@ -3,6 +3,7 @@ name = "tfui"
 version = "0.1.0"
 description = "TFUI - Transport Fever 3 UI Editor — éditeur Teal-React pour Transport Fever 3"
 authors = ["you"]
+license = "GPL-3.0-or-later"
 edition = "2021"
 
 [lib]
